@@ -57,7 +57,7 @@ export default function Home() {
         />
         <meta
           property="og:url"
-          content="https://gyeol-dam.github.io/"
+          content="https://kyuhyuk.kr/wedding-invitation"
         />
         <meta name="theme-color" content="#BCAAA4" />
         <title>양기열❤조담희 결혼식에 초대합니다</title>
