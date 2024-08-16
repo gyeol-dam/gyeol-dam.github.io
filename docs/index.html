@@ -337,27 +337,10 @@
 <div class="bottom_right"><i class="fa fa-arrow-up fa-2x" id="go-to-top"></i>
 </div>
 
-<div class="bottom_left">
-    <button onclick="toggleAudio()">
-        <img id="myImage" src="images/icons/play.png" alt="재생">
-    </button>
-    <audio id="myAudio" src="close to you.mp3" autoplay></audio>
-    
-    <script>
-        const audio = document.getElementById("myAudio");
-        const image = document.getElementById("myImage");
 
-        function toggleAudio() {
-            if (audio.paused) {
-                audio.play();
-                image.src = "images/icons/pause.png";
-            } else {
-                audio.pause();
-                image.src = "images/icons/play.png";
-            }
-        }
-    </script>
-</div>
+<audio id="myAudio" src="close to you.mp3" autoplay loop></audio>
+
+
 
 </body>
 </html>
