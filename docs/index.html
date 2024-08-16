@@ -9,9 +9,9 @@
     <meta property="og:image" content="images/pic2.jpg">
     <meta property="fb:app_id" content="781066922265598" />
     <meta property="fb:admins" content="Choi.Anderson"/>
-    <link href="images/favicon/apple-touch-icon.png" rel="apple-touch-icon" sizes="180x180">
-    <link href="images/favicon/favicon-32x32.png" rel="icon" sizes="32x32" type="image/png">
-    <link href="images/favicon/favicon-16x16.png" rel="icon" sizes="16x16" type="image/png">
+    <link href="images/icons/heart.png" rel="apple-touch-icon" sizes="180x180">
+    <link href="images/icons/heart.png" rel="icon" sizes="32x32" type="image/png">
+    <link href="images/icons/heart.png" rel="icon" sizes="16x16" type="image/png">
     <link href="https://fonts.googleapis.com/css?family=Dosis:400,500" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Great+Vibes" rel="stylesheet">
     <link href="css/ekko-lightbox.css" rel="stylesheet">
@@ -359,7 +359,7 @@
 
 <div class="bottom_left">
     <button onclick="toggleAudio()">
-        <img id="myImage" src="play.png" alt="재생">
+        <img id="myImage" src="images/icons/play.png" alt="재생">
     </button>
     <audio id="myAudio" src="close to you.mp3" autoplay></audio>
     
@@ -370,10 +370,10 @@
         function toggleAudio() {
             if (audio.paused) {
                 audio.play();
-                image.src = "pause.png";
+                image.src = "images/icons/pause.png";
             } else {
                 audio.pause();
-                image.src = "play.png";
+                image.src = "images/icons/play.png";
             }
         }
     </script>
