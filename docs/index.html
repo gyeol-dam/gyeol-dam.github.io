@@ -358,11 +358,25 @@
 </div>
 
 <div class="bottom_left">
-    <audio controls autoplay>
-    <source src="close to you.mp3" type="audio/mpeg">
-    Your browser does not support the audio element.
-    </audio>
+    <button onclick="toggleAudio()">
+        <img id="myImage" src="play.png" alt="재생">
+    </button>
+    <audio id="myAudio" src="close to you.mp3" autoplay></audio>
+    
+    <script>
+        const audio = document.getElementById("myAudio");
+        const image = document.getElementById("myImage");
 
+        function toggleAudio() {
+            if (audio.paused) {
+                audio.play();
+                image.src = "pause.png";
+            } else {
+                audio.pause();
+                image.src = "play.png";
+            }
+        }
+    </script>
 </div>
 
 </body>
