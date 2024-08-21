@@ -9758,10 +9758,12 @@ body {
 .ww-home-page {
     background: url("../images/main-background.jpg") no-repeat center center;
     background-size: cover;
-    background-position: center center;
-    background-position: 50%;
     height: 130vh;
     max-width: 1600px;
+    margin: 0 auto; /* 페이지 가운데 정렬을 위해 추가 */
+    display: flex; /* 요소의 자식들을 가운데 정렬하기 위해 추가 */
+    justify-content: center; /* 수평 가운데 정렬 */
+    align-items: center; /* 수직 가운데 정렬 */
 }
 
 .ww-home-page .ww-wedding-announcement {
