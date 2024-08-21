@@ -10083,3 +10083,9 @@ body {
     left: 0;
     margin: 0px 15px 15px 15px;
 }
+
+
+.music-button {
+    width: 8vw;
+    height: auto;
+}
