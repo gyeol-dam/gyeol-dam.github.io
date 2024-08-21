@@ -9782,7 +9782,8 @@ body {
 
 .ww-home-page .ww-wedding-announcement img {
     max-height: 350px;
-    width: auto;
+    max-width: 400px;
+    /*width: auto;*/
 }
 
 @media (max-width: 480px) {
