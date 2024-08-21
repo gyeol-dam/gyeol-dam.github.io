@@ -9759,7 +9759,7 @@ body {
     background: url("../images/main-background.jpg") no-repeat center center;
     background-size: cover;
     background-position: 50%;
-    height: 50vh;
+    height: 100vh;
     min-height: 480px;
 }
 
@@ -9779,7 +9779,7 @@ body {
     text-align: center;
     z-index: 999;
 }
-
+/*
 .ww-home-page .ww-wedding-announcement img {
     max-height: 350px;
     width: auto;
@@ -9789,6 +9789,25 @@ body {
     .ww-home-page .ww-wedding-announcement img {
         max-height: 250px;
         width: auto;
+    }
+}
+*/
+
+@media (max-width: 480px) {
+    .ww-home-page {
+        /* 화면 크기가 480px 이하일 때 적용되는 스타일 */
+        height: auto; /* 높이를 자동으로 조절 */
+        min-height: 100vh; /* 최소 높이를 뷰포트 높이로 설정 */
+    }
+
+    .ww-home-page .ww-wedding-announcement {
+        /* 화면 크기가 480px 이하일 때 적용되는 스타일 */
+        max-width: 90%; /* 최대 너비를 90%로 조정 */
+    }
+
+    .ww-home-page .ww-wedding-announcement img {
+        /* 화면 크기가 480px 이하일 때 적용되는 스타일 */
+        max-width: 100%; /* 이미지 너비를 부모 요소의 너비에 맞춤 */
     }
 }
 
