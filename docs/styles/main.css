@@ -4187,7 +4187,6 @@ tbody.collapse.show {
     -ms-flex-pack: justify;
     justify-content: space-between;
     padding: 0.5rem 1rem;
-    height: 100px
 }
 
 .navbar > .container,
@@ -9760,7 +9759,7 @@ body {
     background: url("../images/main-background.jpg") no-repeat center center;
     background-size: cover;
     background-position: 50%;
-    /*height: 100vh;*/
+    height: 130vh;
     min-height: 480px;
 }
 
