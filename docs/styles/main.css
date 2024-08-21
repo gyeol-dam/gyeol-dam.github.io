@@ -9767,7 +9767,7 @@ body {
     width: 100%;
     max-width: 1600px;
     margin: 0 auto;
-    height: 140%;
+    height: 100%;
     text-align: center;
     color: #fff;
     text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.4);
@@ -9782,11 +9782,13 @@ body {
 
 .ww-home-page .ww-wedding-announcement img {
     max-height: 350px;
+    width: auto;
 }
 
 @media (max-width: 480px) {
     .ww-home-page .ww-wedding-announcement img {
         max-height: 250px;
+        width: auto;
     }
 }
 
