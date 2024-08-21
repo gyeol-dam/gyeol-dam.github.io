@@ -9792,6 +9792,11 @@ body {
     }
 }
 */
+.ww-home-page .ww-wedding-announcement img {
+    width: 100%; /* 이미지 너비를 부모 요소의 너비에 맞춤 */
+    max-width: 500px; /* 최대 너비를 500px로 제한 */
+    height: auto; /* 높이를 자동으로 조절하여 비율 유지 */
+}
 
 @media (max-width: 480px) {
     .ww-home-page {
