@@ -9760,7 +9760,7 @@ body {
     background-size: cover;
     height: 130vh;
     max-width: 1600px;
-    text-align: center;
+    width: 100%;
 }
 
 .ww-home-page .ww-wedding-announcement {
