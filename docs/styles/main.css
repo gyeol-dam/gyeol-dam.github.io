@@ -9758,6 +9758,8 @@ body {
 .ww-home-page {
     background: url("../images/main-background.jpg") no-repeat center center;
     background-size: cover;
+    background-position: center center;
+    background-position: 50%;
     height: 130vh;
     max-width: 1600px;
 }
@@ -9765,9 +9767,9 @@ body {
 .ww-home-page .ww-wedding-announcement {
     width: 100%;
     max-width: 1600px;
-    display: block;
     margin: 0 auto;
     height: 140%;
+    text-align: center;
     color: #fff;
     text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.4);
     letter-spacing: 2px;
