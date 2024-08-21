@@ -9759,8 +9759,8 @@ body {
     background: url("../images/main-background.jpg") no-repeat center center;
     background-size: cover;
     background-position: 50%;
-    height: 150vh;
-    min-height: 480px;
+    height: 130vh;
+    min-height: 1000px;
 }
 
 .ww-home-page .ww-wedding-announcement {
@@ -9782,8 +9782,7 @@ body {
 
 .ww-home-page .ww-wedding-announcement img {
     max-height: 350px;
-    max-width: 400px;
-    /*width: auto;*/
+    width: auto;
 }
 
 @media (max-width: 480px) {
