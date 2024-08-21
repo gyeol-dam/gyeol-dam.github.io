@@ -9758,7 +9758,6 @@ body {
 .ww-home-page {
     background: url("../images/main-background.jpg") no-repeat center center;
     background-size: cover;
-    background-position: center center;
     height: 130vh;
     max-width: 1600px
 }
