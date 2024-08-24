@@ -10068,3 +10068,9 @@ body {
     width: 4vw;
     height: auto;
 }
+
+.f-carousel__slide {
+    padding: 50px;
+    text-align: center;
+  }
+  
