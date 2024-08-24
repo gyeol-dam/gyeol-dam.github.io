@@ -6465,7 +6465,7 @@ button.bg-danger:focus {
 }
 
 .bg-gift {
-    background: url("../images/gift/gift-background.jpg") no-repeat;
+    background: url("../images/gift/gift-background.png") no-repeat;
     width: 100%;
     background-size: cover;
 }
