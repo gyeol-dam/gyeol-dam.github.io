@@ -388,10 +388,28 @@
 </div>
 
 <div class="bottom_left">
+    <img id="playPauseButton" src="images/icons/play.png" class="music-button" alt="Play Music">
+    <audio id="music" src="close to you.mp3"></audio>
+    <script>
+        const playPauseButton = document.getElementById('playPauseButton');
+        const music = document.getElementById('music');
+
+        playPauseButton.addEventListener('click', function() {
+            if (music.paused) {
+                music.play();
+                playPauseButton.src = 'pause-button.png'; // 음악이 재생 중일 때 보여줄 이미지
+            } else {
+                music.pause();
+                playPauseButton.src = 'play-button.png'; // 음악이 멈출 때 보여줄 이미지
+            }
+        });
+    </script>
+    <!--
     <audio id="player" src="close to you.mp3" loop autoplay></audio>
     <div>
         <img src="images/icons/play.png" alt="배경음악 재생" class="music-button" onclick="document.getElementById('player').play()">
     </div>
+    -->
 </div>
 
 <!-- 
