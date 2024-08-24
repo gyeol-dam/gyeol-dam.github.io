@@ -10074,3 +10074,32 @@ body {
     text-align: center;
   }
   
+
+.slideshow-container {
+    position: relative;
+    width: 100%;
+    max-width: 600px;
+    margin: auto;
+}
+
+/* 이미지 설정 */
+.slideshow-container img {
+    width: 100%;
+    height: auto;
+    opacity: 0;
+    position: absolute;
+    transition: opacity 1s ease-in-out;
+}
+
+/* 첫 번째 이미지 활성화 */
+.slideshow-container img.active {
+    opacity: 1;
+    position: relative;
+}
+
+/* 애니메이션 설정 */
+@keyframes fade {
+    0% { opacity: 1; }
+    50% { opacity: 0; }
+    100% { opacity: 1; }
+}

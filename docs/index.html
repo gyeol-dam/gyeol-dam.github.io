@@ -399,6 +399,26 @@
     <source src="close to you.mp3" type="audio/mp3">
 </audio> -->
 
+<div class="slideshow-container">
+    <img src="images/pic2.jpg" alt="Image 2" class="active">
+    <img src="images/pic3.jpg" alt="Image 3">
+</div>
+
+<script>
+    // 이미지 전환을 위한 스크립트
+    let currentIndex = 0;
+    const images = document.querySelectorAll('.slideshow-container img');
+    const totalImages = images.length;
+
+    function showNextImage() {
+        images[currentIndex].classList.remove('active');
+        currentIndex = (currentIndex + 1) % totalImages;
+        images[currentIndex].classList.add('active');
+    }
+
+    // 3초마다 이미지 전환
+    setInterval(showNextImage, 3000);
+</script>
 
 
 </body>
