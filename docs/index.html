@@ -416,16 +416,19 @@
             
                             var markerOptions = {
                                 position: new naver.maps.LatLng(37.262835, 126.996572),
-                                map: map,
                                 title: '메리빌리아 더프레스티지',
-                                icon: {
-                                    url: "images/icons/heart-marker.png",
-                                    size: naver.maps.Size(10,15)
-                                },
+                                map: map,
                                 animation: naver.maps.Animation.BOUNCE
                             };
+
+                            var smallIcon = {
+                                
+                                url: "images/icons/heart-marker.png",
+                                size: naver.maps.Size(10, 15)
+                            }
             
                             var marker = new naver.maps.Marker(markerOptions);
+                            marker.setIcon(smallIcon);
                             </script>
                         </div>
                     </div>
