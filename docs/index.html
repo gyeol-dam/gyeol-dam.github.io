@@ -399,14 +399,14 @@
                             var mapHeight;
             
                             if (mapWidth <= 767) {
-                                mapWidth = Math.min(mapWidth, 80 * window.innerWidth / 100) + 'px';
-                                mapHeight = '250px';
+                                mapWidth = window.innerWidth;
+                                mapHeight = '300px';
                             } else if (mapWidth <= 1023) {
-                                mapWidth = '700px';
-                                mapHeight = '400px';
+                                mapWidth = window.innerWidth;
+                                mapHeight = '450px';
                             } else {
-                                mapWidth = '1000px';
-                                mapHeight = '600px';
+                                mapWidth = window.innerWidth;
+                                mapHeight = '700px';
                             }
             
                             document.getElementById('map').style.width = mapWidth;
