@@ -385,19 +385,12 @@
                                 zoom: 17
                             };
 
-                            var markerOptions = {
-                                position: new naver.maps.LatLng(37.263040, 126.996744),
-                                map: map
-                            };
-
                             var $window = $(window);
 
                             var map = new naver.maps.Map('map', mapOptions);
 
-                            
-
                             function getMapSize() {
-                                var size = new naver.maps.Size($window.width() - $window.width()/3, $window.height()/2);
+                                var size = new naver.maps.Size($window.width() - $window.width()/3, $window.height() - $window.height()/2);
                                 return size;
                             };
 
@@ -406,6 +399,11 @@
                             });
 
                             map.setSize(getMapSize());
+
+                            var markerOptions = {
+                                position: new naver.maps.LatLng(37.263040, 126.996744),
+                                map: map
+                            };
 
                             var marker = new naver.maps.Marker(markerOptions);
                             </script>
