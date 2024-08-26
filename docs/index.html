@@ -427,7 +427,13 @@
                             };
             
                             var marker = new naver.maps.Marker(markerOptions);
-                            marker.setIcon(smallIcon);
+                            marker.setIcon({
+                                url: "images/icons/heart-marker.png",
+                                size: {
+                                width: 10,
+                                height: 15
+                                }
+                            });
                             </script>
                         </div>
                     </div>
