@@ -399,13 +399,13 @@
                             var mapHeight;
             
                             if (mapWidth <= 767) {
-                                mapWidth = window.innerWidth;
+                                mapWidth = Math.min(mapWidth, 90 * window.innerWidth / 100) + 'px';
                                 mapHeight = '300px';
                             } else if (mapWidth <= 1023) {
-                                mapWidth = window.innerWidth;
+                                mapWidth = '800px';
                                 mapHeight = '450px';
                             } else {
-                                mapWidth = window.innerWidth;
+                                mapWidth = '1200px';
                                 mapHeight = '700px';
                             }
             
