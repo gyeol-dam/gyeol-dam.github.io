@@ -380,29 +380,34 @@
                             <script>
 
                             var mapOptions = {
-                                center: new naver.maps.LatLng(37.263985, 126.997573),
-                                zoom: 17
+                            center: new naver.maps.LatLng(37.263985, 126.997573),
+                            zoom: 17
                             };
-
-                            var $window = $(window);
 
                             var map = new naver.maps.Map('map', mapOptions);
+                            resize();
+                            window.addEventListener('resize', resize);
 
-                            function getMapSize() {
-                                var size = new naver.maps.Size($window.width() - $window.width()/3, $window.height() - $window.height()/3);
-                                return size;
-                            };
+                            function resize() {
+                            var mapWidth = window.innerWidth;
+                            var mapHeight;
 
-                            $window.resize(function() {
-                                map.setSize(getMapSize());
-                            });
+                            if (mapWidth <= 767) {
+                                mapWidth = Math.min(mapWidth, 80 * window.innerWidth / 100) + 'px';
+                                mapHeight = '250px';
+                            } else if (mapWidth <= 1023) {
+                                mapWidth = '700px';
+                                mapHeight = '400px';
+                            } else {
+                                mapWidth = '1000px';
+                                mapHeight = '600px';
+                            }
 
-                            map.setSize(getMapSize());
+                            document.getElementById('map').style.width = mapWidth;
+                            document.getElementById('map').style.height = mapHeight;
+                            map.setSize(new naver.maps.Size(parseInt(mapWidth), parseInt(mapHeight)));
+                            }
 
-                            var markerOptions = {
-                                position: new naver.maps.LatLng(37.262835, 126.996572),
-                                map: map
-                            };
 
                             var marker = new naver.maps.Marker(markerOptions);
                             </script>
