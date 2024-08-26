@@ -377,7 +377,7 @@
                             </label>
                         </div>
                         <div class="my-3">
-                            <div id="map" style="width:500px; height:500px; border-radius: 10px; cursor: pointer;"></div>
+                            <div id="map" style="width:400px; height:250px; border-radius: 10px; cursor: pointer; margin: 0 auto;"></div>
                             <script>
 
                             var mapOptions = {
@@ -397,7 +397,7 @@
                             var marker = new naver.maps.Marker(markerOptions);
 
                             function getMapSize() {
-                                var size = new naver.maps.Size($window.width() - 20, $window.height() - 20);
+                                var size = new naver.maps.Size($window.width() - 30, $window.height() - 50);
                                 return size;
                             };
 
