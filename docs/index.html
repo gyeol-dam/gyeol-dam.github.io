@@ -416,7 +416,10 @@
             
                             var markerOptions = {
                                 position: new naver.maps.LatLng(37.262835, 126.996572),
-                                map: map
+                                map: map,
+                                title: 'urlMarker',
+                                icon: "images/icons/heart-marker.png",
+                                animation: naver.maps.Animation.DROP
                             };
             
                             var marker = new naver.maps.Marker(markerOptions);
