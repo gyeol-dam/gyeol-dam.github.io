@@ -382,50 +382,52 @@
                                 <a href="https://blog.naver.com/mv_the_prestige">주차정보 넣어도 좋겠다</a>
                             </label>
                         </div>
+                        <div class="my-3">
+                            <div id="map" style="display: block; margin: 0 auto; text-align: center;"></div>
+                            <script>
+                            var mapOptions = {
+                            center: new naver.maps.LatLng(37.263985, 126.997573),
+                            zoom: 17
+                            };
+            
+                            var map = new naver.maps.Map('map', mapOptions);
+                            resize();
+                            window.addEventListener('resize', resize);
+            
+                            function resize() {
+                            var mapWidth = window.innerWidth;
+                            var mapHeight;
+            
+                            if (mapWidth <= 767) {
+                                mapWidth = Math.min(mapWidth, 80 * window.innerWidth / 100) + 'px';
+                                mapHeight = '250px';
+                            } else if (mapWidth <= 1023) {
+                                mapWidth = '700px';
+                                mapHeight = '400px';
+                            } else {
+                                mapWidth = '1000px';
+                                mapHeight = '600px';
+                            }
+            
+                            document.getElementById('map').style.width = mapWidth;
+                            document.getElementById('map').style.height = mapHeight;
+                            map.setSize(new naver.maps.Size(parseInt(mapWidth), parseInt(mapHeight)));
+                            }
+            
+                            var markerOptions = {
+                                position: new naver.maps.LatLng(37.263996, 126.997337),
+                                map: map
+                            };
+            
+                            var marker = new naver.maps.Marker(markerOptions);
+                            </script>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
         <div class="ww-section" id="naver-map">
             <div class="container">
-                <div id="map" style="display: block; margin: 0 auto; text-align: center;"></div>
-                <script>
-                var mapOptions = {
-                center: new naver.maps.LatLng(37.263985, 126.997573),
-                zoom: 17
-                };
-
-                var map = new naver.maps.Map('map', mapOptions);
-                resize();
-                window.addEventListener('resize', resize);
-
-                function resize() {
-                var mapWidth = window.innerWidth;
-                var mapHeight;
-
-                if (mapWidth <= 767) {
-                    mapWidth = Math.min(mapWidth, 80 * window.innerWidth / 100) + 'px';
-                    mapHeight = '250px';
-                } else if (mapWidth <= 1023) {
-                    mapWidth = '700px';
-                    mapHeight = '400px';
-                } else {
-                    mapWidth = '1000px';
-                    mapHeight = '600px';
-                }
-
-                document.getElementById('map').style.width = mapWidth;
-                document.getElementById('map').style.height = mapHeight;
-                map.setSize(new naver.maps.Size(parseInt(mapWidth), parseInt(mapHeight)));
-                }
-
-                var markerOptions = {
-                    position: new naver.maps.LatLng(37.262835, 126.996572),
-                    map: map
-                };
-
-                var marker = new naver.maps.Marker(markerOptions);
-                </script>
             </div>
         </div>
 
