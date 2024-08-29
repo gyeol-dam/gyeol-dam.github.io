@@ -9777,22 +9777,36 @@ body {
     letter-spacing: 2px;
 }
 
-.ww-home-page .ww-wedding-announcement .ww-announcement-container {
-    max-width: 600px;
-    text-align: center;
-    z-index: 999;
-}
-
 .ww-home-page .ww-wedding-announcement img {
     max-height: 350px;
     width: auto;
 }
 
+/* 작은 화면 (스마트폰) */
 @media (max-width: 480px) {
     .ww-home-page .ww-wedding-announcement img {
         max-height: 250px;
         width: auto;
     }
+}
+
+/* 중간 크기 화면 (태블릿, 아이패드) */
+@media (min-width: 481px) and (max-width: 1024px) {
+    .ww-home-page .ww-wedding-announcement {
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    .ww-home-page .ww-wedding-announcement img {
+        max-height: 300px;
+        width: auto;
+    }
+}
+
+.ww-home-page .ww-wedding-announcement .ww-announcement-container {
+    max-width: 600px;
+    text-align: center;
+    z-index: 999;
 }
 
 .ww-home-page .ww-wedding-announcement .ww-couple-name {
