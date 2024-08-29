@@ -9756,7 +9756,7 @@ body {
 
 /* Home Page Style */
 .ww-home-page {
-    background: url("../images/main-background.jpg") no-repeat center center;
+    background: url("../images/main.jpg") no-repeat center center;
     background-size: cover;
     height: 135vh;
     max-width: 1500px;
