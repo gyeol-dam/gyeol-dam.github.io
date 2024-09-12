@@ -10183,10 +10183,7 @@ body {
     width: 300px;
     overflow: hidden;
     /* 가운데 정렬을 위한 스타일 추가 */
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    margin: 0 auto; /* 가로 중앙 정렬 */
  }
 
  .gift-nav-item {
