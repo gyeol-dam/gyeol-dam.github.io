@@ -516,54 +516,53 @@
                                 <a href="https://blog.naver.com/mv_the_prestige/223533859381">주차정보 넣어도 좋겠다</a>
                             </label>
                         </div>
-                        <div class="my-3 text-center">
-                            <div id="map" style="margin: 0 auto;"></div>
-                            <script>
-                            var mapOptions = {
-                            center: new naver.maps.LatLng(37.263996, 126.997337),
-                            zoom: 17
-                            };
-            
-                            var map = new naver.maps.Map('map', mapOptions);
-                            resize();
-                            window.addEventListener('resize', resize);
-            
-                            function resize() {
-                            var mapWidth = window.innerWidth;
-                            var mapHeight;
-            
-                            if (mapWidth <= 767) {
-                                mapWidth = Math.min(mapWidth, 90 * window.innerWidth / 100) + 'px';
-                                mapHeight = '300px';
-                            } else if (mapWidth <= 1023) {
-                                mapWidth = '900px';
-                                mapHeight = '500px';
-                            } else {
-                                mapWidth = '1400px';
-                                mapHeight = '700px';
-                            }
-            
-                            document.getElementById('map').style.width = mapWidth;
-                            document.getElementById('map').style.height = mapHeight;
-                            map.setSize(new naver.maps.Size(parseInt(mapWidth), parseInt(mapHeight)));
-                            }
-            
-                            var markerOptions = {
-                                position: new naver.maps.LatLng(37.262835, 126.996572),
-                                title: '메리빌리아 더프레스티지',
-                                icon: "images/icons/heart-marker-small.png",
-                                map: map,
-                                animation: naver.maps.Animation.BOUNCE
-                            };
-            
-                            var marker = new naver.maps.Marker(markerOptions);
-                            
-                            </script>
-                        </div>
                     </div>
                 </div>
             </div>
         </div>
+        <div id="map" style="margin: 0 auto;"></div>
+        <script>
+            var mapOptions = {
+            center: new naver.maps.LatLng(37.263996, 126.997337),
+            zoom: 17
+            };
+
+            var map = new naver.maps.Map('map', mapOptions);
+            resize();
+            window.addEventListener('resize', resize);
+
+            function resize() {
+            var mapWidth = window.innerWidth;
+            var mapHeight;
+
+            if (mapWidth <= 767) {
+                mapWidth = Math.min(mapWidth, 90 * window.innerWidth / 100) + 'px';
+                mapHeight = '300px';
+            } else if (mapWidth <= 1023) {
+                mapWidth = '900px';
+                mapHeight = '500px';
+            } else {
+                mapWidth = '1400px';
+                mapHeight = '700px';
+            }
+
+            document.getElementById('map').style.width = mapWidth;
+            document.getElementById('map').style.height = mapHeight;
+            map.setSize(new naver.maps.Size(parseInt(mapWidth), parseInt(mapHeight)));
+            }
+
+            var markerOptions = {
+                position: new naver.maps.LatLng(37.262835, 126.996572),
+                title: '메리빌리아 더프레스티지',
+                icon: "images/icons/heart-marker-small.png",
+                map: map,
+                animation: naver.maps.Animation.BOUNCE
+            };
+
+            var marker = new naver.maps.Marker(markerOptions);
+        
+        </script>
+
         <div class="ww-section" id="naver-map">
             <div class="container">
             </div>
