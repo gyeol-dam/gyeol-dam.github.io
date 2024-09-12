@@ -9788,6 +9788,7 @@ body {
     .ww-home-page .ww-wedding-announcement img {
         max-height: 250px;
         width: auto;
+        height: 90vh;
     }
 }
 
