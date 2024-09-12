@@ -10117,3 +10117,12 @@ body {
     50% { opacity: 0; }
     100% { opacity: 1; }
 }
+
+
+.menu-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #f0f0f0;
+}
