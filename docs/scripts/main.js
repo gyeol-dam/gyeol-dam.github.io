@@ -162,3 +162,7 @@ function copyToClipboard5() {
    // 성공 메시지 알림
    alert("계좌번호를 복사했습니다.");
 }
+
+document.querySelector('.list').addEventListener('click', function(e){
+    e.preventDefault();
+ });
