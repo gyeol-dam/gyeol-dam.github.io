@@ -10119,10 +10119,55 @@ body {
 }
 
 
-.menu-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px;
-    background-color: #f0f0f0;
-}
+
+
+
+
+
+/* 왼쪽과 오른쪽에 드롭다운 메뉴 배치 */
+.dropdown-container {
+    position: relative;
+    width: 150px;
+  }
+
+  /* 드롭다운 버튼 스타일 */
+  .dropdown-btn {
+    background-color: #3498db;
+    color: white;
+    padding: 10px;
+    width: 100%;
+    border: none;
+    cursor: pointer;
+    text-align: center;
+  }
+
+  /* 드롭다운 리스트 숨김 */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    top: 50px;
+    left: 0;
+    width: 100%;
+    background-color: #f1f1f1;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+  }
+
+  /* 드롭다운 리스트 아이템 스타일 */
+  .dropdown-content a {
+    padding: 10px;
+    display: block;
+    text-decoration: none;
+    color: black;
+    background-color: white;
+    border-bottom: 1px solid #ddd;
+  }
+
+  .dropdown-content a:hover {
+    background-color: #ddd;
+  }
+
+  /* 드롭다운 토글 애니메이션 */
+  .dropdown-content.show {
+    display: block;
+  }

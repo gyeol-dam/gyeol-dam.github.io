@@ -587,29 +587,54 @@
         </script>
 
 
-        <div class="menu-container">
-
-            <div class="dropdown">
-                <a href="#" class="dropbtn">First Menu</a>
-                <ul class="dropdown-menu">
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About Us</a></li>
-                    <li><a href="#">Services</a></li>
-                    <li><a href="#">Contact</a></li>
-                </ul>
-            </div>
-
-
-            <div class="dropdown">
-                <a href="#" class="dropbtn">Second Menu</a>
-                <ul class="dropdown-menu">
-                    <li><a href="#">Portfolio</a></li>
-                    <li><a href="#">Team</a></li>
-                    <li><a href="#">Blog</a></li>
-                    <li><a href="#">Contact</a></li>
-                </ul>
+        <div class="dropdown-container" id="dropdown1">
+            <button class="dropdown-btn">Left Menu</button>
+            <div class="dropdown-content">
+            <a href="#">Item 1</a>
+            <a href="#">Item 2</a>
+            <a href="#">Item 3</a>
             </div>
         </div>
+
+        <!-- 오른쪽 드롭다운 메뉴 -->
+        <div class="dropdown-container" id="dropdown2">
+            <button class="dropdown-btn">Right Menu</button>
+            <div class="dropdown-content">
+            <a href="#">Item 1</a>
+            <a href="#">Item 2</a>
+            <a href="#">Item 3</a>
+            </div>
+        </div>
+
+        <script>
+            // 드롭다운 토글 함수
+            function toggleDropdown(dropdownId) {
+            const dropdown = document.getElementById(dropdownId).querySelector('.dropdown-content');
+            dropdown.classList.toggle('show');
+            }
+
+            // 왼쪽 메뉴 이벤트 리스너
+            document.getElementById('dropdown1').querySelector('.dropdown-btn').addEventListener('click', function() {
+            toggleDropdown('dropdown1');
+            });
+
+            // 오른쪽 메뉴 이벤트 리스너
+            document.getElementById('dropdown2').querySelector('.dropdown-btn').addEventListener('click', function() {
+            toggleDropdown('dropdown2');
+            });
+
+            // 클릭 시 다른 드롭다운이 열려 있으면 닫기
+            window.addEventListener('click', function(e) {
+            if (!e.target.matches('.dropdown-btn')) {
+                const dropdowns = document.querySelectorAll('.dropdown-content');
+                dropdowns.forEach(function(dropdown) {
+                if (dropdown.classList.contains('show')) {
+                    dropdown.classList.remove('show');
+                }
+                });
+            }
+            });
+        </script>
 
 
 
