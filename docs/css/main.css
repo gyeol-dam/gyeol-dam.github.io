@@ -10239,3 +10239,157 @@ body {
  .gift-nav-submenu-link:hover {
     background: #36253f;
  }
+
+
+
+ 
+ul.menu{
+    padding: 0;
+    list-style: none;
+    width: 400px;
+    margin: 20px auto;
+    font-family: 'Century Gothic'; 
+    box-shadow: 5px 5px 10px #00000020;
+    clear: both;
+    display: table;
+    margin-bottom:100px;
+    .list{
+       font-size: 14px;
+       border-bottom:1px solid #bbbbbb;
+       position: relative;
+       width: 100%;
+       box-sizing: border-box;
+       height: 50px;
+       vertical-align: sub;
+       background: #f1f1f1;
+       clear: both;
+       &:after{
+          content: "\f107";
+          font-family:FontAwesome;
+          position: absolute;
+          right: 17px;
+          top: 17px;
+          padding: 0px 5px;
+          color:#111111;
+       }
+       &:before{
+          content: '\1f497';
+          font-family:FontAwesome;
+          position: absolute;
+          left: 17px;
+          top: 17px;
+          padding: 0px 5px;
+          color:#111111;  
+       }
+       a{
+          text-decoration: none;
+          color: #111111;
+          padding: 17px 0px 17px 45px;
+          display: block;
+          height: 100%;
+          box-sizing: border-box;
+          &:hover{
+             background-color: #cfcfcf;
+             transition:  300ms all;
+             color: #111111;
+          }
+       }
+       .items{
+          height: 0px;
+          overflow: hidden;
+          a{
+             padding:17px;
+             &:hover{
+                background-color: #F7F0EC;
+                color:#111111;
+                transition:  300ms all;
+ 
+             }
+          }
+          .right-float {
+             float: right;
+          }
+       }
+       &:last-child{
+          border-bottom:none;
+       }
+    }
+    .active{
+       &:after{
+          content: "\f106";
+          font-family:FontAwesome;
+          position: absolute;
+          right: 17px;
+          top: 17px;
+          padding: 0px 5px;
+          color:#111111;
+       }
+       &:before{
+          content: '\1f497';
+          font-family:FontAwesome;
+          position: absolute;
+          left: 17px;
+          top: 17px;
+          padding: 0px 5px;
+          color:#111111;  
+       }
+       >.items{
+          display: block;
+          background: #fafafa;
+          padding: 0px;
+          height: auto;
+          color:#111111;
+          transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+          transition: all 200ms;
+          clear: both;
+          float: left;
+          width: 100%;
+          li{
+             padding:0px;
+             border-bottom:1px solid #cccccc;
+             list-style: none;
+          }
+          li:last-child{
+             border-color:transparent;
+             padding-bottom: 0px;
+          }
+          .active{
+             > .items{
+                background-color: #2f4b67;
+             }
+          }
+       }
+       > a{
+          color:#111111;
+          text-transform: uppercase;
+          font-weight: bold;
+ 
+       }
+       .list{
+          background: #697d92;
+          a{
+             padding: 17px 0px 17px 45px;
+ 
+          }
+       }
+    }
+ }
+ 
+ .border-button {
+             background-color: #666666; /* 배경색 없음 */
+             color: white; /* 텍스트 색상 */
+             border: 2px; /* 테두리만 있는 버튼 */
+             border-radius: 6px; /* 둥근 모서리 */
+             cursor: pointer; /* 마우스 커서 포인터로 변경 */
+             font-size: 12px; /* 글자 크기 */
+             transition: background-color 0.3s ease; /* 호버 시 부드러운 효과 */
+ }
+ 
+ .border-button:hover {
+             background-color: rgba(0, 0, 0, 0.1); /* 호버 시 살짝 배경색 */
+         }
+ 
+ .hidden-text {
+             position: absolute; /* 화면에서 숨기기 */
+             left: -9999px; /* 화면 외부로 이동 */
+         }

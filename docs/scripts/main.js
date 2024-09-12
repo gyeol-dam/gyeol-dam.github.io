@@ -77,3 +77,88 @@ $("a.smooth-scroll").click(function (event) {
         }
     }
 });
+
+
+
+
+const list = document.querySelectorAll('.list');
+
+function accordion(e){
+    e.stopPropagation(); 
+    if(this.classList.contains('active')){
+        this.classList.remove('active');
+    }
+    else if(this.parentElement.parentElement.classList.contains('active')){
+        this.classList.add('active');
+    }
+    else{
+        for(i=0; i < list.length; i++){
+          list[i].classList.remove('active');
+        }
+            this.classList.add('active');
+        }
+}
+for(i = 0; i < list.length; i++ ){
+    list[i].addEventListener('click', accordion);
+}
+
+
+function copyToClipboard() {
+   // 복사할 텍스트 선택
+   var textArea = document.getElementById("hidden-text");
+
+   // 텍스트 영역을 선택하고 복사
+   textArea.select();
+   document.execCommand("copy");
+
+   // 성공 메시지 알림
+   alert("계좌번호를 복사했습니다.");
+}
+
+function copyToClipboard2() {
+   // 복사할 텍스트 선택
+   var textArea = document.getElementById("hidden-text2");
+
+   // 텍스트 영역을 선택하고 복사
+   textArea.select();
+   document.execCommand("copy");
+
+   // 성공 메시지 알림
+   alert("계좌번호를 복사했습니다.");
+}
+
+function copyToClipboard3() {
+   // 복사할 텍스트 선택
+   var textArea = document.getElementById("hidden-text3");
+
+   // 텍스트 영역을 선택하고 복사
+   textArea.select();
+   document.execCommand("copy");
+
+   // 성공 메시지 알림
+   alert("계좌번호를 복사했습니다.");
+}
+
+function copyToClipboard4() {
+   // 복사할 텍스트 선택
+   var textArea = document.getElementById("hidden-text4");
+
+   // 텍스트 영역을 선택하고 복사
+   textArea.select();
+   document.execCommand("copy");
+
+   // 성공 메시지 알림
+   alert("계좌번호를 복사했습니다.");
+}
+
+function copyToClipboard5() {
+   // 복사할 텍스트 선택
+   var textArea = document.getElementById("hidden-text5");
+
+   // 텍스트 영역을 선택하고 복사
+   textArea.select();
+   document.execCommand("copy");
+
+   // 성공 메시지 알림
+   alert("계좌번호를 복사했습니다.");
+}
