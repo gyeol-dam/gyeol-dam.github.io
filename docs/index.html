@@ -587,54 +587,39 @@
         </script>
 
 
-        <div class="dropdown-container" id="dropdown1">
-            <button class="dropdown-btn">Left Menu</button>
-            <div class="dropdown-content">
-            <a href="#">Item 1</a>
-            <a href="#">Item 2</a>
-            <a href="#">Item 3</a>
-            </div>
+        <div class="ww-section" id="gift">
+            <ul class="gift-nav">
+
+                <li class="gift-nav-item">
+                   <a href="#profile" class="gift-nav-link">Profile</a>
+                   <div id="profile" class="gift-nav-submenu">
+                      <a href="#" class="gift-nav-submenu-link">Posts</a>
+                      <a href="#" class="gift-nav-submenu-link">Images</a>
+                   </div>
+                </li>
+             
+                <li class="gift-nav-item">
+                   <a href="#msg" class="gift-nav-link">Messages</a>
+                   <div id="msg" class="gift-nav-submenu">
+                      <a href="#" class="gift-nav-submenu-link">New</a>
+                      <a href="#" class="gift-nav-submenu-link">Sent</a>
+                   </div>
+                </li>
+             
+                <li class="gift-nav-item">
+                   <a href="#setting" class="gift-nav-link">Settings</a>
+                   <div id="setting" class="gift-nav-submenu">
+                      <a href="#" class="gift-nav-submenu-link">Password</a>
+                      <a href="#" class="gift-nav-submenu-link">Language</a>
+                   </div>
+                </li>
+             
+                <li class="gift-nav-item">
+                   <a href="#exit" class="gift-nav-link">Exit</a>
+                </li>
+             
+            </ul>
         </div>
-
-        <!-- 오른쪽 드롭다운 메뉴 -->
-        <div class="dropdown-container" id="dropdown2">
-            <button class="dropdown-btn">Right Menu</button>
-            <div class="dropdown-content">
-            <a href="#">Item 1</a>
-            <a href="#">Item 2</a>
-            <a href="#">Item 3</a>
-            </div>
-        </div>
-
-        <script>
-            // 드롭다운 토글 함수
-            function toggleDropdown(dropdownId) {
-            const dropdown = document.getElementById(dropdownId).querySelector('.dropdown-content');
-            dropdown.classList.toggle('show');
-            }
-
-            // 왼쪽 메뉴 이벤트 리스너
-            document.getElementById('dropdown1').querySelector('.dropdown-btn').addEventListener('click', function() {
-            toggleDropdown('dropdown1');
-            });
-
-            // 오른쪽 메뉴 이벤트 리스너
-            document.getElementById('dropdown2').querySelector('.dropdown-btn').addEventListener('click', function() {
-            toggleDropdown('dropdown2');
-            });
-
-            // 클릭 시 다른 드롭다운이 열려 있으면 닫기
-            window.addEventListener('click', function(e) {
-            if (!e.target.matches('.dropdown-btn')) {
-                const dropdowns = document.querySelectorAll('.dropdown-content');
-                dropdowns.forEach(function(dropdown) {
-                if (dropdown.classList.contains('show')) {
-                    dropdown.classList.remove('show');
-                }
-                });
-            }
-            });
-        </script>
 
 
 
