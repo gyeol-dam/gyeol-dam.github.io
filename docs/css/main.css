@@ -9760,11 +9760,29 @@ body {
     background: url("../images/main.jpg") no-repeat center center;
     background-size: cover;
     height: 100vh;
-    max-width: 900px;
+    
     margin: 0 auto; /* 페이지 가운데 정렬을 위해 추가 */
     display: flex; /* 요소의 자식들을 가운데 정렬하기 위해 추가 */
     justify-content: center; /* 수평 가운데 정렬 */
     align-items: center; /* 수직 가운데 정렬 */
+}
+
+@media (max-width: 480px) {
+    .ww-home-page {
+        max-width: 900px;
+    }
+}
+
+@media (min-width: 481px) and (max-width: 1024px) {
+    .ww-home-page {
+        max-width: 650px;
+    }
+}
+
+@media (min-width: 1025px) {
+    .ww-home-page {
+        max-width: 900px;
+    }
 }
 
 .ww-home-page .ww-wedding-announcement {
@@ -9788,7 +9806,6 @@ body {
     .ww-home-page .ww-wedding-announcement img {
         max-height: 250px;
         width: auto;
-        height: 90vh;
     }
 }
 
