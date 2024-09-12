@@ -9758,7 +9758,7 @@ body {
 .ww-home-page {
     background: url("../images/main.jpg") no-repeat center center;
     background-size: cover;
-    height: 135vh;
+    height: 100vh;
     max-width: 1110px;
     margin: 0 auto; /* 페이지 가운데 정렬을 위해 추가 */
     display: flex; /* 요소의 자식들을 가운데 정렬하기 위해 추가 */
