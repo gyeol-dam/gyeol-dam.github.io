@@ -10246,7 +10246,7 @@ body {
 ul.menu{
     padding: 0;
     list-style: none;
-    width: 400px;
+    width: 450px;
     margin: 20px auto;
     font-family: 'Century Gothic'; 
     box-shadow: 5px 5px 10px #00000020;
@@ -10298,7 +10298,7 @@ ul.menu{
           height: 0px;
           overflow: hidden;
           a{
-             padding:17px;
+             padding:12px;
              &:hover{
                 background-color: #F7F0EC;
                 color:#111111;
@@ -10314,9 +10314,11 @@ ul.menu{
           border-bottom:none;
        }
 
-       .items li{
-        padding: 5px 0;
-       }
+       .items p {
+            margin: 10px;
+            align-items: center;
+            justify-content: space-between;
+        }
 
     }
     .active{
