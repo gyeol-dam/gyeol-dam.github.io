@@ -10245,11 +10245,22 @@ body {
 
  
 
+ .gift-container {
+    display: flex;
+    margin: 0;
+    margin-right: 350px;
+    margin-left: 350px;
+ }
+ 
+ .menu-container {
+    width: 100%;
+ }
+ 
  ul.menu{
     padding: 0;
     list-style: none;
-    width: 450px;
-    margin: 20px auto;
+    width: 400px;
+    margin: 0px auto;
     font-family: 'Century Gothic'; 
     box-shadow: 5px 5px 10px #00000020;
     clear: both;
@@ -10390,7 +10401,7 @@ body {
              border: 2px; /* 테두리만 있는 버튼 */
              border-radius: 6px; /* 둥근 모서리 */
              cursor: pointer; /* 마우스 커서 포인터로 변경 */
-             font-size: 12px; /* 글자 크기 */
+             font-size: 15px; /* 글자 크기 */
              transition: background-color 0.3s ease; /* 호버 시 부드러운 효과 */
  }
  
@@ -10403,8 +10414,16 @@ body {
              left: -9999px; /* 화면 외부로 이동 */
          }
  
- 
- 
+ /* 모바일에서 위아래로 배치하기 */
+ @media (max-width: 1500px) {
+    .gift-container {
+       flex-direction: column;
+       margin-right: 0vh;
+       margin-left: 0vh;
+       margin: 0 auto
+    }
+ } 
+
 
 @media only screen and (max-width: 768px) {
     ul.menu {
