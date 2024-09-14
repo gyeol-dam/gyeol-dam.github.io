@@ -10410,3 +10410,38 @@ ul.menu{
         font-size: 15px;
     }
 }
+
+
+
+.directions {
+    padding: 20px;
+    background-color: #ffffff;
+    max-width: 600px;
+    margin: 20px auto;
+    border-radius: 8px;
+}
+
+h2 {
+    text-align: center;
+    color: #333;
+}
+
+.transportation .method {
+    padding: 10px 0;
+}
+
+.transportation hr {
+    border: 0;
+    border-top: 1px solid #e0e0e0;
+    margin: 20px 0;
+}
+
+.method h3 {
+    margin: 0 0 10px;
+    color: #444;
+}
+
+.method p {
+    margin: 5px 0;
+    color: #666;
+}
