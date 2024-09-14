@@ -10313,6 +10313,11 @@ ul.menu{
        &:last-child{
           border-bottom:none;
        }
+
+       .items li{
+        padding: 5px 0;
+       }
+
     }
     .active{
        &:after{
