@@ -10417,9 +10417,9 @@ body {
 
 
 .directions {
-    padding: 0px;
+    padding: 10px;
     background-color: #ffffff;
-    max-width: 620px;
+    max-width: 630px;
     margin: 10px auto;
     border-radius: 8px;
 }
