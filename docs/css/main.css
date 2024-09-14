@@ -10254,7 +10254,7 @@ ul.menu{
     display: table;
     margin-bottom:100px;
     .list{
-       font-size: 14px;
+       font-size: 15px;
        border-bottom:1px solid #bbbbbb;
        position: relative;
        width: 100%;
@@ -10404,5 +10404,8 @@ ul.menu{
 @media only screen and (max-width: 768px) {
     ul.menu {
         width: 100%; /* 모바일에서는 100% 너비로 변경 */
+    }
+    ul.menu list {
+        font-size: 15px;
     }
 }
