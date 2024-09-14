@@ -10416,13 +10416,9 @@ ul.menu{
 .directions {
     padding: 20px;
     background-color: #ffffff;
-    max-width: 600px;
+    max-width: 620px;
+    margin: 20px auto;
     border-radius: 8px;
-}
-
-h2 {
-    text-align: center;
-    color: #333;
 }
 
 .transportation .method {
