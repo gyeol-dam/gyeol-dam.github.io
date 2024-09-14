@@ -81,6 +81,17 @@ $("a.smooth-scroll").click(function (event) {
 
 
 
+// 모든 .items 요소를 선택
+const items = document.querySelectorAll('.items');
+
+// 각 .items 요소에 클릭 이벤트 리스너 추가
+items.forEach(item => {
+        item.addEventListener('click', function(e) {
+            e.stopPropagation(); // 클릭 이벤트의 전파를 막음
+            e.preventDefault();
+        })
+});
+
 const list = document.querySelectorAll('.list');
 
 function accordion(e){
@@ -101,6 +112,7 @@ function accordion(e){
 for(i = 0; i < list.length; i++ ){
     list[i].addEventListener('click', accordion);
 }
+
 
 
 function copyToClipboard() {
@@ -162,7 +174,3 @@ function copyToClipboard5() {
    // 성공 메시지 알림
    alert("계좌번호를 복사했습니다.");
 }
-
-document.querySelector('.list').addEventListener('click', function(e){
-    e.preventDefault();
- });

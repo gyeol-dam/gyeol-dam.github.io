@@ -10244,7 +10244,8 @@ body {
 
 
  
-ul.menu{
+
+ ul.menu{
     padding: 0;
     list-style: none;
     width: 450px;
@@ -10255,8 +10256,8 @@ ul.menu{
     display: table;
     margin-bottom:100px;
     .list{
-       font-size: 15px;
-       border-bottom:1px solid #bbbbbb;
+       font-size: 16px;
+       border-bottom:1px solid #cccccc;
        position: relative;
        width: 100%;
        box-sizing: border-box;
@@ -10280,7 +10281,7 @@ ul.menu{
           left: 17px;
           top: 17px;
           padding: 0px 5px;
-          color:#111111;  
+          color:#111111;
        }
        a{
           text-decoration: none;
@@ -10311,16 +10312,16 @@ ul.menu{
              float: right;
           }
        }
+       
+       .items p {
+          margin: 10px;
+          align-items: center;
+          justify-content: space-between;
+       }
+       
        &:last-child{
           border-bottom:none;
        }
-
-       .items p {
-            margin: 10px;
-            align-items: center;
-            justify-content: space-between;
-        }
-
     }
     .active{
        &:after{
@@ -10354,7 +10355,7 @@ ul.menu{
           width: 100%;
           li{
              padding:0px;
-             border-bottom:1px solid #cccccc;
+             border-bottom:1px solid #dddddd;
              list-style: none;
           }
           li:last-child{
@@ -10401,6 +10402,9 @@ ul.menu{
              position: absolute; /* 화면에서 숨기기 */
              left: -9999px; /* 화면 외부로 이동 */
          }
+ 
+ 
+ 
 
 @media only screen and (max-width: 768px) {
     ul.menu {
