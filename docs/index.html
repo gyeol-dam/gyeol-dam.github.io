@@ -537,15 +537,27 @@
             map.setSize(new naver.maps.Size(parseInt(mapWidth), parseInt(mapHeight)));
             }
 
-            var markerOptions = {
+            var anim_markerOptions = {
                 position: new naver.maps.LatLng(37.262835, 126.996572),
-                title: '메리빌리아 더프레스티지',
                 icon: "images/icons/heart-marker-small.png",
                 map: map,
                 animation: naver.maps.Animation.BOUNCE
             };
 
-            var marker = new naver.maps.Marker(markerOptions);
+            var anim_marker = new naver.maps.Marker(markerOptions);
+
+            var img_markerOptions = {
+                position: new naver.maps.LatLng(37.262835, 126.996572),
+                map: map,
+                icon: {
+                    url: "images/icons/weddinghall",
+                    size: new naver.maps.Size(50, 52),
+                    origin: new naver.maps.Point(0, 0),
+                    anchor: new naver.maps.Point(25, 26)
+                }
+            };
+
+            var img_marker = new naver.maps.Marker(img_markerOptions);
         
         </script>
 
