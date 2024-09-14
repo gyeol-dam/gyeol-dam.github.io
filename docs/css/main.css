@@ -10398,3 +10398,9 @@ ul.menu{
              position: absolute; /* 화면에서 숨기기 */
              left: -9999px; /* 화면 외부로 이동 */
          }
+
+@media only screen and (max-width: 768px) {
+    ul.menu {
+        width: 100%; /* 모바일에서는 100% 너비로 변경 */
+    }
+}
