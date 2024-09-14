@@ -10416,14 +10416,14 @@ body {
 }
 
 
-
 .directions {
-    padding: 20px;
+    padding: 0px;
     background-color: #ffffff;
-    max-width: 640px;
-    margin: 20px auto;
+    max-width: 620px;
+    margin: 10px auto;
     border-radius: 8px;
 }
+
 
 .transportation .method {
     padding: 10px 0;
@@ -10432,15 +10432,15 @@ body {
 .transportation hr {
     border: 0;
     border-top: 1px solid #e0e0e0;
-    margin: 20px 0;
+    margin: 15px 0;
 }
 
-.method h3 {
-    margin: 0 0 10px;
+.method h4 {
+    margin: 0 0 15px;
     color: #444;
 }
 
 .method p {
-    margin: 5px 0;
+    margin: 7px 0;
     color: #666;
 }
