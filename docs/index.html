@@ -438,114 +438,112 @@
                 </div>
             </div>
         </div>
-
-        <div class="container">
-            <div class="col text-center">
-                <h2 class="h1 text-center pb-3 ww-title" style="font-family: 'Noto Sans KR', sans-serif;">오시는 길</h2>
-                <div>
-                    <h5 style="font-family: 'Noto Sans KR', sans-serif;">수원 메리빌리아 더프레스티지 1F 가든홀</h5>
-                    <h6 style="font-family: 'Noto Sans KR', sans-serif;">(경기 수원시 권선구 세화로 116)</h6>
-                </div>
-            </div>
-
-            <div class="form-group">
-                <div class="col-md-12">
-                    <div class="my-3 text-center">
-                        <a href="https://map.naver.com/p/entry/place/1856237237?c=15.00,0,0,0,dh">
-                            <img alt="naver-map" class="map-icon" id="naver-map"
-                                    src="images/map/naver-map.png"/>
-                        </a>
-                        <a href="https://tmap.life/1a1b2fce">
-                            <img alt="tmap" class="map-icon" id="tmap"
-                                    src="images/map/tmap.png"/>
-                        </a>
-                        <a href="https://maps.app.goo.gl/iHwekoqXkasAnNPt6">
-                            <img alt="google-map" class="map-icon" id="google-map"
-                                    src="images/map/google-map.png"/>
-                        </a>
-                    </div>
-                    <div class="col text-center">
-                        <label style="font-family: 'Noto Sans KR', sans-serif; font-size: 20px;">
-                            <a href="https://blog.naver.com/mv_the_prestige/223533859381">주차정보 넣어도 좋겠다<br></a>
-                        </label>
+        <div class="ww-section ww-rsvp-detail" id="come">
+            <div class="container">
+                <div class="col text-center">
+                    <h2 class="h1 text-center pb-3 ww-title" style="font-family: 'Noto Sans KR', sans-serif;">오시는 길</h2>
+                    <div>
+                        <h5 style="font-family: 'Noto Sans KR', sans-serif;">수원 메리빌리아 더프레스티지 1F 가든홀</h5>
+                        <h6 style="font-family: 'Noto Sans KR', sans-serif;">(경기 수원시 권선구 세화로 116)</h6>
                     </div>
                 </div>
+
+                <div class="form-group">
+                    <div class="col-md-12">
+                        <div class="my-3 text-center">
+                            <a href="https://map.naver.com/p/entry/place/1856237237?c=15.00,0,0,0,dh">
+                                <img alt="naver-map" class="map-icon" id="naver-map"
+                                     src="images/map/naver-map.png"/>
+                            </a>
+                            <a href="https://tmap.life/1a1b2fce">
+                                <img alt="tmap" class="map-icon" id="tmap"
+                                     src="images/map/tmap.png"/>
+                            </a>
+                            <a href="https://maps.app.goo.gl/iHwekoqXkasAnNPt6">
+                                <img alt="google-map" class="map-icon" id="google-map"
+                                     src="images/map/google-map.png"/>
+                            </a>
+                        </div>
+                        <div class="col text-center">
+                            <label style="font-family: 'Noto Sans KR', sans-serif; font-size: 20px;">
+                                <a href="https://blog.naver.com/mv_the_prestige/223533859381">주차정보 넣어도 좋겠다</a>
+                            </label>
+                        </div>
+                    </div>
+                </div>
             </div>
-        </div>
-
-
-        <div id="map" style="margin: 0 auto;">
-        </div>
-        <div class="directions">
-            <div class="transportation">
-                <div class="method">
-                    <h4>🚗 자가용</h4>
-                    <p>내비게이션 → '메리빌리아 더 프레스티지' 검색</p>
-                    <p>(경기 수원시 권선구 세화로 116)</p>
-                </div>
-                <hr>
-                <div class="method">
-                    <h4>🚄 지하철/KTX</h4>
-                    <p>1호선, 수인분당선, KTX 수원역 2층 3번 출구</p>
-                    <p>타임빌라스 수원 (구.롯데몰 수원) 맞은편 (도보 8분)</p>
-                </div>
-                <hr>
-                <div class="method">
-                    <h4>🚌 버스</h4>
-                    <p>수원역 환승센터(1승강장), 평동 동남아파트 하차</p>
+            <div id="map" style="margin: 0 auto;">
+            </div>
+            <div class="directions">
+                <div class="transportation">
+                    <div class="method">
+                        <h4>🚗 자가용</h4>
+                        <p>내비게이션 → '메리빌리아 더 프레스티지' 검색</p>
+                        <p>(경기 수원시 권선구 세화로 116)</p>
+                    </div>
+                    <hr>
+                    <div class="method">
+                        <h4>🚄 지하철/KTX</h4>
+                        <p>1호선, 수인분당선, KTX 수원역 2층 3번 출구</p>
+                        <p>타임빌라스 수원 (구.롯데몰 수원) 맞은편 (도보 8분)</p>
+                    </div>
+                    <hr>
+                    <div class="method">
+                        <h4>🚌 버스</h4>
+                        <p>수원역 환승센터(1승강장), 평동 동남아파트 하차</p>
+                    </div>
                 </div>
             </div>
+
+            <script>
+                var mapOptions = {
+                center: new naver.maps.LatLng(37.264724, 126.998123),
+                zoom: 16
+                };
+
+                var map = new naver.maps.Map('map', mapOptions);
+                resize();
+                window.addEventListener('resize', resize);
+
+                function resize() {
+                var mapWidth = window.innerWidth;
+                var mapHeight;
+
+                if (mapWidth <= 767) {
+                    mapWidth = window.innerWidth + 'px';
+                    mapHeight = '300px';
+                } else if (mapWidth <= 1023) {
+                    mapWidth = '640px';
+                    mapHeight = '480px';
+                } else {
+                    mapWidth = '640px';
+                    mapHeight = '480px';
+                }
+
+                document.getElementById('map').style.width = mapWidth;
+                document.getElementById('map').style.height = mapHeight;
+                map.setSize(new naver.maps.Size(parseInt(mapWidth), parseInt(mapHeight)));
+                }
+
+                var anim_markerOptions = {
+                    position: new naver.maps.LatLng(37.263135, 126.996600),
+                    icon: "images/icons/heart-marker-small.png",
+                    map: map,
+                    animation: naver.maps.Animation.BOUNCE
+                };
+
+                var anim_marker = new naver.maps.Marker(anim_markerOptions);
+
+                var img_markerOptions = {
+                    position: new naver.maps.LatLng(37.262435, 126.996572),
+                    map: map,
+                    icon: "images/icons/weddinghall-small.png",
+                };
+
+                var img_marker = new naver.maps.Marker(img_markerOptions);
+            
+            </script>
         </div>
-
-        <script>
-            var mapOptions = {
-            center: new naver.maps.LatLng(37.264724, 126.998123),
-            zoom: 16
-            };
-
-            var map = new naver.maps.Map('map', mapOptions);
-            resize();
-            window.addEventListener('resize', resize);
-
-            function resize() {
-            var mapWidth = window.innerWidth;
-            var mapHeight;
-
-            if (mapWidth <= 767) {
-                mapWidth = window.innerWidth + 'px';
-                mapHeight = '300px';
-            } else if (mapWidth <= 1023) {
-                mapWidth = '640px';
-                mapHeight = '480px';
-            } else {
-                mapWidth = '640px';
-                mapHeight = '480px';
-            }
-
-            document.getElementById('map').style.width = mapWidth;
-            document.getElementById('map').style.height = mapHeight;
-            map.setSize(new naver.maps.Size(parseInt(mapWidth), parseInt(mapHeight)));
-            }
-
-            var anim_markerOptions = {
-                position: new naver.maps.LatLng(37.263135, 126.996600),
-                icon: "images/icons/heart-marker-small.png",
-                map: map,
-                animation: naver.maps.Animation.BOUNCE
-            };
-
-            var anim_marker = new naver.maps.Marker(anim_markerOptions);
-
-            var img_markerOptions = {
-                position: new naver.maps.LatLng(37.262435, 126.996572),
-                map: map,
-                icon: "images/icons/weddinghall-small.png",
-            };
-
-            var img_marker = new naver.maps.Marker(img_markerOptions);
-        
-        </script>
-
 
 
 
