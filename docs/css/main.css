@@ -10466,6 +10466,7 @@ body {
 .map-container {
     width: 640px; /* 이미지의 폭 설정 */
     margin: 0 auto;
+    max-width: 300px;
  }
 
  @media only screen and (max-width: 640px) {
@@ -10473,7 +10474,7 @@ body {
         width: 100vw; /* 이미지의 폭 설정 */
         margin: 0 auto;
         max-width: 300px;
-        
+
      }
 }
  
