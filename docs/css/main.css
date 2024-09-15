@@ -639,6 +639,7 @@ pre code {
     min-height: 1px;
     padding-right: 15px;
     padding-left: 15px;
+    margin: 0 auto;
 }
 
 .col {
@@ -1175,6 +1176,7 @@ pre code {
         -ms-flex: 0 0 50%;
         flex: 0 0 50%;
         max-width: 50%;
+        margin: 0 auto;
     }
 
     .col-md-7 {
