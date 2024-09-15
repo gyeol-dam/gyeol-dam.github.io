@@ -10544,23 +10544,23 @@ body {
     overflow: hidden;
 }
 
-@media (min-width: 576px) {
+@media (min-width: 768px) {
     .image-container {
-        max-width: 540px;
+        width: 380px;
     }
 }
 
 
 @media (min-width: 992px) {
     .image-container {
-        max-width: 960px;
+        width: 480px;
     }
 }
 
 
 @media (min-width: 1200px) {
     .image-container {
-        max-width: 1140px;
+        width: 600px;
     }
 }
 
