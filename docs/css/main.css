@@ -10303,7 +10303,7 @@ body {
           a{
              padding:12px;
              &:hover{
-                background-color: #F7F0EC;
+                background-color: #fafafa;
                 color:#111111;
                 transition:  300ms all;
  
