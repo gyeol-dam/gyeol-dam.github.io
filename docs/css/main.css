@@ -10540,13 +10540,14 @@ body {
 .image-container {
     position: relative;
     width: 360px; /* 원하는 크기로 조정 */
-    height: auto; /* 원하는 크기로 조정 */
+    height: 360px; /* 원하는 크기로 조정 */
     overflow: hidden;
 }
 
 @media (min-width: 768px) {
     .image-container {
         width: 380px;
+        height: 380px;
     }
 }
 
@@ -10554,6 +10555,7 @@ body {
 @media (min-width: 992px) {
     .image-container {
         width: 480px;
+        height: 480px;
     }
 }
 
@@ -10561,6 +10563,7 @@ body {
 @media (min-width: 1200px) {
     .image-container {
         width: 600px;
+        height: 600px;
     }
 }
 
