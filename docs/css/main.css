@@ -9753,7 +9753,7 @@ body {
 
 /* Home Page Style */
 .ww-home-page {
-    background: url("../images/main.jpg") no-repeat center center;
+    background: url("../images/main.png") no-repeat center center;
     background-size: cover;
     height: 100vh;
     max-width: 720px;
@@ -10539,10 +10539,32 @@ body {
 /* 이미지 컨테이너 스타일 */
 .image-container {
     position: relative;
-    width: 600px; /* 원하는 크기로 조정 */
+    width: 100%; /* 원하는 크기로 조정 */
     height: 600px; /* 원하는 크기로 조정 */
     overflow: hidden;
 }
+
+@media (min-width: 576px) {
+    .image-container {
+        max-width: 540px;
+    }
+}
+
+
+@media (min-width: 992px) {
+    .image-container {
+        max-width: 960px;
+    }
+}
+
+
+@media (min-width: 1200px) {
+    .image-container {
+        max-width: 1140px;
+    }
+}
+
+
 
 .gr-fade-img {
     position: absolute;
