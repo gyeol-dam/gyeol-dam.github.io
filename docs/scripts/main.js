@@ -174,3 +174,21 @@ function copyToClipboard5() {
    // 성공 메시지 알림
    alert("계좌번호를 복사했습니다.");
 }
+
+
+
+let currentIndex = 0;
+const images = document.querySelectorAll('.fade-img');
+const totalImages = images.length;
+
+function changeImage() {
+    // 현재 활성화된 이미지를 비활성화
+    images[currentIndex].classList.remove('active');
+    
+    // 다음 이미지를 활성화
+    currentIndex = (currentIndex + 1) % totalImages;
+    images[currentIndex].classList.add('active');
+}
+
+// 3초마다 이미지 전환
+setInterval(changeImage, 3000);
