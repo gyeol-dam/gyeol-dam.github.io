@@ -516,17 +516,22 @@
                 var mapWidth = window.innerWidth;
                 var mapHeight;
 
+
+            
                 if (mapWidth <= 767) {
-                    mapWidth = window.innerWidth + 'px';
                     mapHeight = '300px';
                 } else if (mapWidth <= 1023) {
-                    mapWidth = '640px';
                     mapHeight = '480px';
                 } else {
-                    mapWidth = '640px';
                     mapHeight = '480px';
                 }
 
+
+
+                const parentElement = document.querySelector('.map-container');
+                const parentWidth = window.getComputedStyle(parentElement).width;
+
+                document.getElementById('map').style.width = parentWidth;
                 document.getElementById('map').style.height = mapHeight;
                 map.setSize(new naver.maps.Size(parseInt(mapWidth), parseInt(mapHeight)));
                 }
