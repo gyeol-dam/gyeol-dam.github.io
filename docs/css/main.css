@@ -10539,8 +10539,8 @@ body {
 /* 이미지 컨테이너 스타일 */
 .image-container {
     position: relative;
-    width: 100%; /* 원하는 크기로 조정 */
-    height: auto; /* 원하는 크기로 조정 */
+    width: 360px; /* 원하는 크기로 조정 */
+    height: 100%; /* 원하는 크기로 조정 */
     overflow: hidden;
 }
 
