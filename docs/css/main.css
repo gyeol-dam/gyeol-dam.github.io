@@ -10540,7 +10540,7 @@ body {
 .image-container {
     position: relative;
     width: 360px; /* 원하는 크기로 조정 */
-    height: 100%; /* 원하는 크기로 조정 */
+    height: auto; /* 원하는 크기로 조정 */
     overflow: hidden;
 }
 
