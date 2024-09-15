@@ -10401,6 +10401,19 @@ body {
  .border-button:hover {
              background-color: rgba(0, 0, 0, 0.1); /* 호버 시 살짝 배경색 */
          }
+
+ .border-button:focus {
+    outline: none;
+}
+
+.map-button {
+    outline: none;
+}
+
+.map-button:focus {
+    outline: none;
+}
+
  
  .hidden-text {
              position: absolute; /* 화면에서 숨기기 */
