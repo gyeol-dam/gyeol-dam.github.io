@@ -472,30 +472,24 @@
                     </div>
                 </div>
             </div>
-            <div id="map" style="margin: 0 auto;">
-            </div>
-            <div class="directions">
-                <div class="transportation">
-                    <div class="method">
-                        <h4>🚗 자가용</h4>
-                        <p>내비게이션 → '메리빌리아 더 프레스티지' 검색</p>
-                        <p>(경기 수원시 권선구 세화로 116)</p>
-                    </div>
-                    <hr>
-                    <div class="method">
-                        <h4>🚄 지하철/KTX</h4>
-                        <p>1호선, 수인분당선, KTX 수원역 2층 3번 출구</p>
-                        <p>타임빌라스 수원 (구.롯데몰 수원) 맞은편 (도보 8분)</p>
-                    </div>
-                    <hr>
-                    <div class="method">
-                        <h4>🚌 버스</h4>
-                        <p>수원역 환승센터(1승강장), 평동 동남아파트 하차</p>
-                    </div>
+            <div class="map-container">
+                <div id="map" style="margin: 0 auto;">
                 </div>
-            </div>
-
-            <script>
+                <div class="rectangle">
+                   <button>
+                      <div class="button-content">
+                         <img src="images/map/naver-map.png" class="button-image"></img>
+                         <span>네이버 지도</span> <!-- 텍스트 -->
+                      </div>
+                   </button>
+                   <!-- 오른쪽 버튼 -->
+                   <button>
+                      <div class="button-content">
+                         <img src="images/map/tmap.png" class="button-image"></img>
+                         <span>티맵 길안내</span> <!-- 텍스트 -->
+                      </div>
+                   </button>
+                </div>            <script>
                 var mapOptions = {
                 center: new naver.maps.LatLng(37.264724, 126.998123),
                 zoom: 16
@@ -543,6 +537,28 @@
                 var img_marker = new naver.maps.Marker(img_markerOptions);
             
             </script>
+
+            <div class="directions">
+                <div class="transportation">
+                    <div class="method">
+                        <h4>🚗 자가용</h4>
+                        <p>내비게이션 → '메리빌리아 더 프레스티지' 검색</p>
+                        <p>(경기 수원시 권선구 세화로 116)</p>
+                    </div>
+                    <hr>
+                    <div class="method">
+                        <h4>🚄 지하철/KTX</h4>
+                        <p>1호선, 수인분당선, KTX 수원역 2층 3번 출구</p>
+                        <p>타임빌라스 수원 (구.롯데몰 수원) 맞은편 (도보 8분)</p>
+                    </div>
+                    <hr>
+                    <div class="method">
+                        <h4>🚌 버스</h4>
+                        <p>수원역 환승센터(1승강장), 평동 동남아파트 하차</p>
+                    </div>
+                </div>
+            </div>
+
         </div>
 
 
