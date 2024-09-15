@@ -10475,7 +10475,7 @@ body {
  
  /* 이미지 스타일 */
  .map-container img {
-    width: 50px;
+    width: 25px;
     height: auto;
     display: block;
  }
@@ -10486,45 +10486,58 @@ body {
     justify-content: space-between;
     align-items: center;
     background-color: #f0f0f0;
-    padding: 10px;
     position: relative;
  }
  
  /* 버튼 스타일 */
  .rectangle button {
     background-color: #f0f0f0; /* 초록색 버튼 */
-    color: white;
+    color: black;
+    font-size: 16px;
     border: none;
-    padding: 10px;
+    padding: 12px;
     cursor: pointer;
     flex: 1;
     display: flex;
     align-items: center;
-    justify-content: flex-start;
+    justify-content: center;
  }
  
  .rectangle button:hover {
     background-color: #d9d9d9; /* 호버 시 색상 변화 */
  }
  
+ .rectangle button a {
+    text-decoration: none;
+ }
+ 
  /* 아이콘과 텍스트 스타일 */
  .button-content {
     display: flex;
-    align-items: center;
+    align-items: center
  }
  
  .button-content img {
-    margin-right: 40px; /* 아이콘과 텍스트 사이의 간격 */
+    margin-right: 15px; /* 아이콘과 텍스트 사이의 간격 */
+    align-items: center;
  }
  
  /* 두 버튼 사이에 세로 구분선 */
- .rectangle::after {
+ .rectangle::after,
+ .rectangle::before {
     content: "";
     position: absolute;
     width: 1px;
     height: 60%;
     background-color: #ddd;
     top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translateY(-50%);
+ }
+ 
+ .rectangle::before {
+    left: 33.33%; /* 첫 번째 구분선 */
+ }
+ 
+ .rectangle::after {
+    left: 66.66%; /* 두 번째 구분선 */
  }

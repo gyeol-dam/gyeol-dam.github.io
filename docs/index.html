@@ -476,20 +476,33 @@
                 <div id="map" style="margin: 0 auto;">
                 </div>
                 <div class="rectangle">
-                   <button>
-                      <div class="button-content">
-                         <img src="images/map/naver-map.png" class="button-image"></img>
-                         <span>네이버 지도</span> <!-- 텍스트 -->
-                      </div>
-                   </button>
-                   <!-- 오른쪽 버튼 -->
-                   <button>
-                      <div class="button-content">
-                         <img src="images/map/tmap.png" class="button-image"></img>
-                         <span>티맵 길안내</span> <!-- 텍스트 -->
-                      </div>
-                   </button>
-                </div>            <script>
+                    <button>
+                        <a href="https://map.naver.com/p/entry/place/1856237237?c=15.00,0,0,0,dh">
+                            <div class="button-content">
+                            <img src="images/map/naver-map.png" class="button-image"></img>
+                            <span>네이버 지도</span>
+                            </div>
+                        </a>
+                    </button>
+                    <button>
+                        <a href="https://tmap.life/1a1b2fce">
+                            <div class="button-content">
+                            <img src="images/map/tmap.png" class="button-image"></img>
+                            <span>카카오 내비</span>
+                            </div>
+                        </a>
+                    </button>
+                    <button>
+                        <a href="https://tmap.life/1a1b2fce">
+                            <div class="button-content">
+                            <img src="images/map/tmap.png" class="button-image"></img>
+                            <span>티맵</span>
+                            </div>
+                        </a>
+                    </button>
+                </div>
+            </div>
+            <script>
                 var mapOptions = {
                 center: new naver.maps.LatLng(37.264724, 126.998123),
                 zoom: 16
