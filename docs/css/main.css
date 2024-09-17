@@ -10551,20 +10551,20 @@ body {
 }
 
 
-
 .image-container {
     display: flex;
     justify-content: center; /* 가운데 정렬 */
     align-items: center;
-    gap: 100px; /* 사진 사이의 간격 */
+    gap: 10vw; /* 사진 사이의 간격 */
     padding: 20px;
     height: 100vh;
-    flex-wrap: wrap;
+    flex-wrap: wrap; /* 모바일 환경에서 컨텐츠가 줄 바꿈 되도록 설정 */
  }
  
  .fade-image {
     width: 45%;
     max-width: 500px; /* 이미지 최대 크기 500px */
+    position: relative;
  }
  
  .fade-image img {
@@ -10577,17 +10577,22 @@ body {
     .image-container {
        flex-direction: column;
        height: auto;
+       align-items: stretch;
     }
  
+    .fade-image {
+       max-width: 80%;
+       height: auto;
+    }
  }
  
  
  
  .fade-container {
-    position: relative;
-    width: 100%; /* 원하는 크기로 조정 */
-    height: 100%; /* 원하는 크기로 조정 */
-    text-align: center;
+     position: relative;
+     width: 100%; /* 원하는 크기로 조정 */
+     height: 100%; /* 원하는 크기로 조정 */
+     overflow: hidden;
  }
  
  
@@ -10617,16 +10622,4 @@ body {
  
  .br-fade-img.active {
      opacity: 1;
- }
- 
- .text-below {
-    position: absolute;
-    bottom: -150px; /* 사진 아래 10px 위치 */
-    left: 50%;
-    transform: translateX(-50%); /* 가운데 정렬 */
-    text-align: center;
- }
- 
- .item {
-     text-align: center;
  }
