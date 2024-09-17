@@ -10563,7 +10563,7 @@ body {
  
  .fade-image {
     width: 45%;
-    max-width: 500px; /* 이미지 최대 크기 500px */
+    max-width: 450px; /* 이미지 최대 크기 500px */
     position: relative;
  }
  
@@ -10572,19 +10572,6 @@ body {
     height: auto;
  }
  
- /* 모바일 환경을 위한 미디어 쿼리 */
- @media (max-width: 768px) {
-    .image-container {
-       flex-direction: column;
-       height: auto;
-       align-items: stretch;
-    }
- 
-    .fade-image {
-       max-width: 80%;
-       height: auto;
-    }
- }
  
  
  
@@ -10592,7 +10579,6 @@ body {
      position: relative;
      width: 100%; /* 원하는 크기로 조정 */
      height: 100%; /* 원하는 크기로 조정 */
-     overflow: hidden;
  }
  
  
