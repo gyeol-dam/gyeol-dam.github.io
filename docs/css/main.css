@@ -10600,7 +10600,7 @@ body {
     text-align: center;
   }
   
-  @media all and (max-width: 768px) {
+  @media all and (max-width: 1080px) {
     .box_wrap {
       flex-direction: column;
     }
