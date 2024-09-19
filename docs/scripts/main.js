@@ -176,37 +176,24 @@ function copyToClipboard5() {
 }
 
 
-
-let gr_currentIndex = 0;
-const gr_images = document.querySelectorAll('.gr-fade-img');
-const gr_totalImages = gr_images.length;
-
-function gr_changeImage() {
-    // 현재 활성화된 이미지를 비활성화
-    gr_images[gr_currentIndex].classList.remove('active');
+function fadeImages() {
+    const damImages = document.querySelectorAll('.box.dam .image-section img');
+    const yangImages = document.querySelectorAll('.box.yang .image-section img');
     
-    // 다음 이미지를 활성화
-    gr_currentIndex = (gr_currentIndex + 1) % gr_totalImages;
-    gr_images[gr_currentIndex].classList.add('active');
-}
-
-// 3초마다 이미지 전환
-setInterval(gr_changeImage, 3000);
-
-
-let br_currentIndex = 0;
-const br_images = document.querySelectorAll('.br-fade-img');
-const br_totalImages = br_images.length;
-
-function br_changeImage() {
-    // 현재 활성화된 이미지를 비활성화
-    br_images[br_currentIndex].classList.remove('active');
+    let damIndex = 0;
+    let yangIndex = 0;
     
-    // 다음 이미지를 활성화
-    br_currentIndex = (br_currentIndex + 1) % br_totalImages;
-    br_images[br_currentIndex].classList.add('active');
-}
-
-// 3초마다 이미지 전환
-setInterval(br_changeImage, 3000);
-
+    function showNextImage(images, index) {
+      images.forEach((img, i) => img.classList.remove('active'));
+      images[index].classList.add('active');
+    }
+    
+    setInterval(() => {
+      damIndex = (damIndex + 1) % damImages.length;
+      yangIndex = (yangIndex + 1) % yangImages.length;
+      showNextImage(damImages, damIndex);
+      showNextImage(yangImages, yangIndex);
+    }, 3000);
+  }
+  
+  window.onload = fadeImages;
