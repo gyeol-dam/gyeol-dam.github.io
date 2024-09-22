@@ -10699,10 +10699,15 @@ body {
 
  .hwahwan {
     text-align: center;
-    padding: 100px;
+    padding: 10px;
     color: #777;
     font-weight: bold;
-    font-size: 15px;
+    font-size: 13px;
     line-height: 1.7;
+    margin-top: 60px;
     margin-bottom: 60px;
+ }
+
+ .ending-section {
+    margin-bottom: 20px;
  }
