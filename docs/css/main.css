@@ -10615,23 +10615,26 @@ body {
 
 
 
-.dday-title {
+ .dday-title{
     text-align: center;
     font-size: 1.5rem;
-    color: #ddd !important;
-}
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+    color: #fff !important;
+ }
  
-.dday {
+ .dday {
     text-align: center;
     margin-top: 30px;
-}
-#countdown-days {
+ }
+ #countdown-days {
     font-size: 4rem;
     color: #fff;
     letter-spacing: 8px;
-}
-#countdown-time {
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+ }
+ #countdown-time {
     font-size: 1.5rem;
-    color: #ddd;
+    color: #fff;
     line-height: 2;
-}
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+ }
