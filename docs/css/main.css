@@ -10596,26 +10596,35 @@ body {
  .text-section {
     margin-top: 10px;
     padding: 10px;
-    text-align: center;
-    font-size: 1.25rem;
+    background: rgba(255, 255, 255, 0.8);
+    font-size: 1.2rem;
     line-height: 1.7;
  }
  
- @media all and (max-width: 1080px) {
+ @media all and (max-width: 850px) {
     .box_wrap {
        flex-direction: column;
     }
     .box {
        width: 100%;
+       align-items: center;
+    }
+    .text-section {
+       max-width: 400px;
+       text-align: center;
     }
  }
-
+ 
  .couple-name {
     text-align: center;
-    margin-top: 20px;
-    font-size: 1.5rem;
+    margin-top: 15px;
+    font-size: 1.3rem;
  }
  
+ 
+
+
+
  
 
 
