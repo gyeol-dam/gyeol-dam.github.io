@@ -10503,6 +10503,7 @@ body {
     align-items: center;
     background-color: #f0f0f0;
     position: relative;
+    gap: 5px;
  }
  
  /* 버튼 스타일 */
