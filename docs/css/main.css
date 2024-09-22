@@ -10608,3 +10608,16 @@ body {
       width: 100%;
     }
   }
+
+
+
+
+.dday {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin-top: 50px;
+ }
+ #countdown {
+    font-size: 2rem;
+    color: #333;
+ }
