@@ -10694,3 +10694,15 @@ body {
        height: 200px; /* 모바일 환경 */
     }
  }
+
+
+
+ .hwahwan {
+    text-align: center;
+    padding: 100px;
+    color: #777;
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 1.7;
+    margin-bottom: 60px;
+ }
