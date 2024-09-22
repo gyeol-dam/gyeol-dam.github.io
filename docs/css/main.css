@@ -10554,9 +10554,8 @@ body {
 
 .box_wrap {
     max-width: 1200px;
-    width: 80%;
+    width: 100%;
     margin: 0 auto;
-    padding: 2%;
     display: flex;
     flex-direction: row;
     align-items: flex-start;
@@ -10575,7 +10574,7 @@ body {
   .image-section {
     position: relative;
     width: 100%;
-    height: 600px;
+    height: 550px;
     overflow: hidden;
   }
   
