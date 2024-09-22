@@ -210,6 +210,11 @@ function updateCountdown() {
     const now = new Date().getTime();
     const distance = targetDate - now;
 
+    // 숫자를 두 자리로 포맷하는 함수
+    function padNumber(num) {
+        return num < 10 ? '0' + num : num;
+    }
+
     // 계산
     const days = Math.floor(distance / (1000 * 60 * 60 * 24));
     const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
@@ -220,13 +225,13 @@ function updateCountdown() {
     document.getElementById('countdown-days').innerHTML = 
         "D-" + days;
     document.getElementById('countdown-time').innerHTML = 
-        hours + " : " + minutes + " : " + seconds;
+    padNumber(hours) + " : " + padNumber(minutes) + " : " + padNumber(seconds);
 
     // D-day가 도달하면 메시지 표시
     if (distance < 0) {
         clearInterval(countdownInterval);
-        document.getElementById('countdown-days').innerHTML = "";
-        document.getElementById('countdown-time').innerHTML = "D-day입니다!";
+        document.getElementById('countdown-days').innerHTML = "D-day !";
+        document.getElementById('countdown-time').innerHTML = "";
     }
 }
 
