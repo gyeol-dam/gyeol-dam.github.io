@@ -10560,7 +10560,7 @@ body {
     flex-direction: row;
     align-items: flex-start;
     justify-content: space-between;
-    gap: 4vw;
+    gap: 10vw;
  }
  
  .box {
