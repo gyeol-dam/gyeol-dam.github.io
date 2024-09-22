@@ -220,7 +220,7 @@ function updateCountdown() {
     document.getElementById('countdown-days').innerHTML = 
         "D-" + days;
     document.getElementById('countdown-time').innerHTML = 
-        hours + "시간 " + minutes + "분 " + seconds + "초 남았습니다.";
+        hours + " : " + minutes + " : " + seconds;
 
     // D-day가 도달하면 메시지 표시
     if (distance < 0) {
