@@ -10561,7 +10561,7 @@ body {
     flex-direction: row;
     align-items: flex-start;
     justify-content: space-between;
-    gap: 8vw;
+    gap: 4vw;
   }
   
   .box {
@@ -10601,7 +10601,7 @@ body {
     text-align: center;
   }
   
-  @media all and (max-width: 1080px) {
+  @media all and (max-width: 1100px) {
     .box_wrap {
       flex-direction: column;
     }
