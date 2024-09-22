@@ -10729,3 +10729,23 @@ body {
  .ending-section {
     margin-bottom: 10px;
  }
+
+
+
+
+
+ .section-background {
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    height: 60vh;
+    width: 100%;
+    color: #FFFFFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .parallax3 {
+    background-image: url("../images/ending_orig.jpg");
+  }
