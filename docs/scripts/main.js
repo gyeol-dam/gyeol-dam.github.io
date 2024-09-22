@@ -201,30 +201,35 @@ function fadeImages() {
 
 
 
+  
+
 
 // D-day 설정 (2024년 12월 8일 오후 2시)
 const targetDate = new Date('2024-12-08T14:00:00').getTime();
 
 // 카운트다운 업데이트 함수
 function updateCountdown() {
-   const now = new Date().getTime();
-   const distance = targetDate - now;
+    const now = new Date().getTime();
+    const distance = targetDate - now;
 
-   // 계산
-   const days = Math.floor(distance / (1000 * 60 * 60 * 24));
-   const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-   const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-   const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+    // 계산
+    const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+    const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+    const seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
-   // HTML 업데이트
-   document.getElementById('countdown').innerHTML = 
-      days + "일 " + hours + "시간 " + minutes + "분 " + seconds + "초 남았습니다.";
+    // HTML 업데이트
+    document.getElementById('countdown-days').innerHTML = 
+        "D-" + days;
+    document.getElementById('countdown-time').innerHTML = 
+        hours + "시간 " + minutes + "분 " + seconds + "초 남았습니다.";
 
-   // D-day가 도달하면 메시지 표시
-   if (distance < 0) {
-      clearInterval(countdownInterval);
-      document.getElementById('countdown').innerHTML = "D-day입니다!";
-   }
+    // D-day가 도달하면 메시지 표시
+    if (distance < 0) {
+        clearInterval(countdownInterval);
+        document.getElementById('countdown-days').innerHTML = "";
+        document.getElementById('countdown-time').innerHTML = "D-day입니다!";
+    }
 }
 
 // 1초마다 업데이트

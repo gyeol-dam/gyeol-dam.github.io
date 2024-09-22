@@ -10618,7 +10618,12 @@ body {
     text-align: center;
     margin-top: 50px;
  }
- #countdown {
+ #countdown-days {
+    font-size: 6rem;
+    color: #fff;
+    letter-spacing: 8px;
+ }
+ #countdown-time {
     font-size: 2rem;
-    color: #eee;
+    color: #ddd;
  }
