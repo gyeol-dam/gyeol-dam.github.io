@@ -10633,14 +10633,14 @@ body {
 
  .dday-date{
     text-align: center;
-    font-size: 1.3rem;
+    font-size: 1.1rem;
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
     color: #fff !important;
  }
 
  .dday-title{
     text-align: center;
-    font-size: 1.6rem;
+    font-size: 1.3rem;
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
     color: #fff !important;
  }
@@ -10650,21 +10650,17 @@ body {
     margin-top: 30px;
  }
  #countdown-days {
-    font-size: 4rem;
+    font-size: 3.5rem;
     color: #fff;
     letter-spacing: 8px;
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
  }
  #countdown-time {
-    font-size: 2rem;
+    font-size: 1.6rem;
     color: #fff;
     line-height: 2;
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
  }
-
-
-
-
 
 
  .title-text {
@@ -10677,41 +10673,6 @@ body {
 
 
 
-
- .ending-container {
-    width: 100%; /* 전체 너비에 맞춤 */
-    overflow: hidden; /* 잘린 부분 숨김 */
- }
- 
- .ending-container img {
-    width: 100%; /* 이미지가 가로폭에 맞게 조절됨 */
-    height: auto; /* 높이는 비율에 따라 자동 조정 */
-    object-fit: cover; /* 비율 유지하며 잘리도록 설정 */
- }
- 
- @media (min-width: 1440px) {
-    .ending-container img {
-       height: 400px; /* PC 환경 */
-    }
- }
- 
- @media (min-width: 1024px) and (max-width: 1439px) {
-    .ending-container img {
-       height: 340px; /* 작은모니터 환경 */
-    }
- }
- 
- @media (min-width: 768px) and (max-width: 1023px) {
-    .ending-container img {
-       height: 270px; /* 아이패드 환경 */
-    }
- }
- 
- @media (max-width: 767px) {
-    .ending-container img {
-       height: 200px; /* 모바일 환경 */
-    }
- }
 
 
 
@@ -10755,7 +10716,7 @@ body {
     background-attachment: fixed;
     background-position: center;
     background-size: cover;
-    height: 20vh;
+    height: 30vh;
     width: 100%;
     color: #FFFFFF;
     display: flex;
