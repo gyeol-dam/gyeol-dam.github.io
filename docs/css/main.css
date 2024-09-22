@@ -10612,22 +10612,22 @@ body {
 
 
 
-.dday-title{
+.dday-title {
     text-align: center;
     font-size: 1.5rem;
- }
+}
  
- .dday {
-    font-family: Arial, sans-serif;
+.dday {
     text-align: center;
     margin-top: 30px;
- }
- #countdown-days {
+}
+#countdown-days {
     font-size: 4rem;
     color: #ccc;
     letter-spacing: 8px;
- }
- #countdown-time {
+}
+#countdown-time {
     font-size: 1.5rem;
     color: #aaa;
- }
+    line-height: 2;
+}
