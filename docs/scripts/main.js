@@ -201,8 +201,6 @@ function fadeImages() {
 
 
 
-  
-
 
 // D-day 설정 (2024년 12월 8일 오후 2시)
 const targetDate = new Date('2024-12-08T14:00:00').getTime();
