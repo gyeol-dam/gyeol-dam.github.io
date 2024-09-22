@@ -10062,7 +10062,6 @@ body {
 
 .ww-section {
     padding: 100px 0;
-    margin: 8px;
 }
 
 .btn-primary {
@@ -10623,7 +10622,9 @@ body {
     font-size: 1.3rem;
  }
  
- 
+.couple-margin {
+    margin: 8px;
+}
 
 
 
