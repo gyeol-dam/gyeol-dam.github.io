@@ -10654,3 +10654,43 @@ body {
     font-size: 1.2rem;
     line-height: 1.5;
  }
+
+
+
+
+
+
+ .ending-container {
+    width: 100%; /* 전체 너비에 맞춤 */
+    overflow: hidden; /* 잘린 부분 숨김 */
+ }
+ 
+ .ending-container img {
+    width: 100%; /* 이미지가 가로폭에 맞게 조절됨 */
+    height: auto; /* 높이는 비율에 따라 자동 조정 */
+    object-fit: cover; /* 비율 유지하며 잘리도록 설정 */
+ }
+ 
+ @media (min-width: 1440px) {
+    .ending-container img {
+       height: 400px; /* PC 환경 */
+    }
+ }
+ 
+ @media (min-width: 1024px) and (max-width: 1439px) {
+    .ending-container img {
+       height: 340px; /* 작은모니터 환경 */
+    }
+ }
+ 
+ @media (min-width: 768px) and (max-width: 1023px) {
+    .ending-container img {
+       height: 270px; /* 아이패드 환경 */
+    }
+ }
+ 
+ @media (max-width: 767px) {
+    .ending-container img {
+       height: 200px; /* 모바일 환경 */
+    }
+ }
