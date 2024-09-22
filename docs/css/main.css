@@ -10749,3 +10749,20 @@ body {
   .parallax-ending {
     background-image: url("../images/ending_orig.jpg");
   }
+
+
+  .section-background-dday {
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    height: 20vh;
+    width: 100%;
+    color: #FFFFFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .parallax-dday {
+    background-image: url("../images/gift/gift-background.png");
+  }
