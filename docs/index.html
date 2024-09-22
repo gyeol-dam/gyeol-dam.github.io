@@ -504,21 +504,13 @@
                 }
 
                 var anim_markerOptions = {
-                    position: new naver.maps.LatLng(37.263135, 126.996600),
+                    position: new naver.maps.LatLng(37.263100, 126.996600),
                     icon: "images/icons/heart-marker-small.png",
                     map: map,
                     animation: naver.maps.Animation.BOUNCE
                 };
 
                 var anim_marker = new naver.maps.Marker(anim_markerOptions);
-
-                var img_markerOptions = {
-                    position: new naver.maps.LatLng(37.262435, 126.996572),
-                    map: map,
-                    icon: "images/icons/weddinghall-small.png",
-                };
-
-                var img_marker = new naver.maps.Marker(img_markerOptions);
             
             </script>
 
@@ -629,7 +621,7 @@
             </div>
         </div>
         <div class="ww-section" id="ending">
-            
+
         </div>
     </div>
 </div>
@@ -662,42 +654,8 @@
             }
         });
     </script>
-    <!--
-    <audio id="player" src="close to you.mp3" loop autoplay></audio>
-    <div>
-        <img src="images/icons/play.png" alt="배경음악 재생" class="music-button" onclick="document.getElementById('player').play()">
-    </div>
-    -->
+
 </div>
-
-<!-- 
-<audio id="player" autoplay loop>
-    <source src="close to you.mp3" type="audio/mp3">
-</audio> -->
-
-
-<!--
-<div class="slideshow-container">
-    <img src="images/pic2.jpg" alt="Image 2" class="active">
-    <img src="images/pic3.jpg" alt="Image 3">
-</div>
-
-<script>
-    // 이미지 전환을 위한 스크립트
-    let currentIndex = 0;
-    const images = document.querySelectorAll('.slideshow-container img');
-    const totalImages = images.length;
-
-    function showNextImage() {
-        images[currentIndex].classList.remove('active');
-        currentIndex = (currentIndex + 1) % totalImages;
-        images[currentIndex].classList.add('active');
-    }
-
-    // 3초마다 이미지 전환
-    setInterval(showNextImage, 3000);
-</script>
--->
 
 </body>
 </html>
