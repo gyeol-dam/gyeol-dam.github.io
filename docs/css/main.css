@@ -10628,11 +10628,11 @@ body {
 }
 #countdown-days {
     font-size: 4rem;
-    color: #ccc;
+    color: #fff;
     letter-spacing: 8px;
 }
 #countdown-time {
     font-size: 1.5rem;
-    color: #aaa;
+    color: #ccc;
     line-height: 2;
 }
