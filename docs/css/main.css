@@ -10613,6 +10613,7 @@ body {
     background: rgba(255, 255, 255, 0.8);
     font-size: 1.1rem;
     line-height: 1.7;
+    word-break: keep-all;
  }
  
  @media all and (max-width: 850px) {
