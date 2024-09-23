@@ -10774,4 +10774,7 @@ body {
     .section-background-ending {
       background-attachment: scroll; /* iOS에서 고정 배경 대신 스크롤로 설정 */
     }
+    .parallax-ending {
+        background-image: url("../images/ending_ios.png");
+      }
   }
