@@ -10743,7 +10743,7 @@ body {
     background-attachment: fixed;
     background-position: center;
     background-size: cover;
-    height: 90vh;
+    height: 50vh;
     width: 100%;
     color: #FFFFFF;
     display: flex;
@@ -10752,7 +10752,7 @@ body {
   }
 
   .parallax-ending {
-    background-image: url("../images/ending_orig.jpg");
+    background-image: url("../images/ending_trimmed.png");
   }
 
 
@@ -10765,7 +10765,7 @@ body {
       }
 
     .section-background-ending {
-        height: 80vh;
+        height: 100vh;
       }
     
  }
