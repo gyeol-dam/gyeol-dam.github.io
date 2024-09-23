@@ -9772,15 +9772,21 @@ body {
     }
 }
 
-@media (min-width: 641px) and (max-width: 1023px) {
+@media (min-width: 860px) and (max-width: 1023px) {
     .ww-home-page {
         max-width: 520px;
     }
 }
 
+@media (min-width: 640px) and (max-width: 859px) {
+    .ww-home-page {
+        max-width: 460px;
+    }
+}
+
 @media (max-width: 640px) {
     .ww-home-page {
-        max-width: 480px;
+        max-width: 400px;
     }
 }
 
