@@ -10769,3 +10769,9 @@ body {
       }
     
  }
+
+ @supports (-webkit-overflow-scrolling: touch) {
+    .section-background-ending {
+      background-attachment: scroll; /* iOS에서 고정 배경 대신 스크롤로 설정 */
+    }
+  }
