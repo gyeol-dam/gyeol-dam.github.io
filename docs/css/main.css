@@ -10721,28 +10721,12 @@ body {
 
 
 
- .section-background-ending {
-    background-attachment: fixed;
-    background-position: center;
-    background-size: cover;
-    height: 80vh;
-    width: 100%;
-    color: #FFFFFF;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .parallax-ending {
-    background-image: url("../images/ending_orig.jpg");
-  }
-
 
   .section-background-dday {
     background-attachment: fixed;
     background-position: center;
     background-size: cover;
-    height: 35vh;
+    height: 30vh;
     width: 100%;
     color: #FFFFFF;
     display: flex;
@@ -10755,14 +10739,33 @@ body {
   }
 
 
+  .section-background-ending {
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    height: 90vh;
+    width: 100%;
+    color: #FFFFFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .parallax-ending {
+    background-image: url("../images/ending_orig.jpg");
+  }
+
+
+
+
   @media all and (max-width: 850px) {
 
-    .section-background-ending {
-        height: 50vh;
+    .section-background-dday {
+        height: 40vh;
       }
-    
-      .section-background-dday {
-        height: 45vh;
+
+    .section-background-ending {
+        height: 80vh;
       }
     
  }
