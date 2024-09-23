@@ -9766,27 +9766,27 @@ body {
     align-items: center; /* 수직 가운데 정렬 */
 }
 
-@media (min-width: 1024px) and (max-width: 1400px) {
+@media (min-width: 1150px) and (max-width: 1500px) {
     .ww-home-page {
         max-width: 600px;
     }
 }
 
-@media (min-width: 860px) and (max-width: 1023px) {
+@media (min-width: 900px) and (max-width: 1149px) {
     .ww-home-page {
-        max-width: 520px;
+        max-width: 480px;
     }
 }
 
-@media (min-width: 640px) and (max-width: 859px) {
+@media (min-width: 640px) and (max-width: 899px) {
     .ww-home-page {
-        max-width: 460px;
+        max-width: 420px;
     }
 }
 
 @media (max-width: 640px) {
     .ww-home-page {
-        max-width: 400px;
+        max-width: 380px;
     }
 }
 
