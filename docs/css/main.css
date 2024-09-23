@@ -9766,17 +9766,25 @@ body {
     align-items: center; /* 수직 가운데 정렬 */
 }
 
+@media (min-width: 1024px) and (max-width: 1400px) {
+    .ww-home-page {
+        max-width: 600px;
+    }
+}
+
+@media (min-width: 641px) and (max-width: 1023px) {
+    .ww-home-page {
+        max-width: 520px;
+    }
+}
+
 @media (max-width: 640px) {
     .ww-home-page {
         max-width: 480px;
     }
 }
 
-@media (min-width: 641px) and (max-width: 1400px) {
-    .ww-home-page {
-        max-width: 560px;
-    }
-}
+
 
 .ww-home-page .ww-wedding-announcement {
     width: 100%;
