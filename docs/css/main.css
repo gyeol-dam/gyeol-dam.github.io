@@ -10746,8 +10746,17 @@ body {
  }
  
  .parallax-dday {
-    background-image: url("../images/gift/gift-background.png");
+    background-image: url("../images/dday2.jpg");
  }
+
+ @supports (-webkit-overflow-scrolling: touch) {
+    .section-background-ending {
+      background-attachment: scroll; /* iOS에서 고정 배경 대신 스크롤로 설정 */
+    }
+    .parallax-ending {
+        background-image: url("../images/ending_ios.png");
+      }
+  }
 
 
 
