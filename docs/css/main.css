@@ -10577,7 +10577,7 @@ body {
     flex-direction: row;
     align-items: flex-start;
     justify-content: space-between;
-    gap: 10vw;
+    gap: 5vw;
  }
  
  .box {
@@ -10677,12 +10677,12 @@ body {
 
  .dday-date{
     text-align: center;
-    font-size: 1.05rem;
+    font-size: 0.95rem;
     color: #fff !important;
     font-weight: 700;
     margin-top: 30px;
     margin-bottom: 15px;
-    letter-spacing: -1px;
+    letter-spacing: 0px;
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.4);
  }
  
@@ -10713,7 +10713,7 @@ body {
     color: #fff;
     line-height: 2;
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.4);
-    font-weight: 200;
+    font-weight: 100;
     letter-spacing: -1px;
  }
  
