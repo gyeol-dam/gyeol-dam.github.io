@@ -10073,6 +10073,7 @@ body {
 .ww-title {
     font-family: "Noto Sans KR";
     user-select: none;
+    font-weight: 300;
 }
 
 .ww-section {
