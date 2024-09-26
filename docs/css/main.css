@@ -10821,7 +10821,8 @@ body {
     transform: translateX(-50%);
     text-align: center;
     color: white;
-    font-size: 1.1rem;
+    font-size: 1rem;
+    line-height: 1.4;
  }
  
  .ending-text-section {
