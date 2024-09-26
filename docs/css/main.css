@@ -10793,3 +10793,61 @@ body {
         background-image: url("../images/ending_ios.png");
       }
   }
+
+
+
+
+
+
+  .ending-container {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+ }
+ 
+ .ending-image-section {
+    position: relative;
+    height: 80vh;
+    width: 100%;
+    background-image: url('https://github.com/gyeol-dam/gyeol-dam.github.io/blob/main/docs/images/ending_yj_trimmed.png?raw=true'); /* 이미지 경로를 여기에 넣어줘 */
+    background-size: cover;
+    background-position: center;
+ }
+ 
+ .ending-overlay-text {
+    position: absolute;
+    top: 13%;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    color: white;
+    font-size: 1.1rem;
+ }
+ 
+ .ending-text-section {
+    height: 20vh;
+    min-height: 140px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+ }
+ 
+ .ending-button-row {
+    margin-bottom: 20px;
+ }
+ 
+ .ending-button-row button {
+    background-color: transparent;
+    border: none;
+    color: #555;
+    text-decoration: underline;
+    font-size: 0.9rem;
+    margin: 0 10px;
+    cursor: pointer;
+ }
+ 
+ .ending-text-row {
+    font-size: 0.8rem;
+    color: #888;
+ }
