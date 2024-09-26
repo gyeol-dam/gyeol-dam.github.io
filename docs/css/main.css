@@ -10657,6 +10657,15 @@ body {
     object-fit: contain; /* 이미지 원본 비율 유지 */
  }
 
+ .parents-text-section {
+    margin-top: 10px;
+    padding: 10px;
+    background: rgba(255, 255, 255, 0.8);
+    font-size: 1.1rem;
+    line-height: 1.7;
+    word-break: keep-all;
+ }
+
 
 
  
