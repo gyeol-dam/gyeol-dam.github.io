@@ -10809,7 +10809,7 @@ body {
     position: relative;
     height: 80vh;
     width: 100%;
-    background-image: url('https://github.com/gyeol-dam/gyeol-dam.github.io/blob/main/docs/images/ending_yj_trimmed.png?raw=true'); /* 이미지 경로를 여기에 넣어줘 */
+    background-image: url('../images/ending_yj_trimmed.png'); /* 이미지 경로를 여기에 넣어줘 */
     background-size: cover;
     background-position: center;
  }
