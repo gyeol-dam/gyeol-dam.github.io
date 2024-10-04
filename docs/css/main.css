@@ -10859,6 +10859,7 @@ a.text-dark:hover, a.text-dark:focus {
     font-size: 1rem;
     line-height: 1.4;
     width: 80vw;
+    font-family: 'KoPubWorldBatang' !important;
  }
  
  .ending-text-section {
