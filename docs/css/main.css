@@ -10047,10 +10047,15 @@ a.text-dark:hover, a.text-dark:focus {
 
 /* Common Style */
 .ww-title {
-    font-family: "Noto Sans KR";
-    font-weight: 100;
     margin-bottom: 50px;
     font-size: 3rem;
+
+    font-family: "Noto Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    font-variation-settings:
+      "wdth" 100;
 }
 
 .ww-section {
