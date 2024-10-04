@@ -9732,7 +9732,7 @@ a.text-dark:hover, a.text-dark:focus {
 
 /* Home Page Style */
 .ww-home-page {
-    background: url("../images/main.png") no-repeat center center;
+    background: url("../images/main.jpg") no-repeat center center;
     background-size: cover;
     height: 100vh;
     max-width: 720px;
