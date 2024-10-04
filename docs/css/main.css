@@ -10437,6 +10437,11 @@ a.text-dark:hover, a.text-dark:focus {
 }
 
 
+
+.location {
+    margin-bottom: 50px;
+ }
+
 .directions {
     padding: 10px;
     background-color: #ffffff;
