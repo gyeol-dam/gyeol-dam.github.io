@@ -705,15 +705,14 @@
                     <script>
                         // 카카오톡 JavaScript SDK 초기화
                         Kakao.init('a31236c656f97a06f0185e1f25a09703');  // 여기에 발급받은 JavaScript 키를 넣어야 함
-                        console.log(Kakao.isInitialized());  // SDK 초기화 여부 확인용
 
                         // 공유하기 기능
                         document.getElementById('kakao-link-btn').addEventListener('click', function() {
                             Kakao.Share.sendDefault({
                                 objectType: 'feed',
                                 content: {
-                                    title: '양기열과 조담희의 결혼식에 초대합니다.',
-                                    description: '2024년 12월 8일 오후 2시',
+                                    title: '양기열♥조담희 결혼합니다.',
+                                    description: '2024년 12월 8일 오후 2시 수원 메리빌리아 더프레스티지',
                                     imageUrl: 'https://github.com/gyeol-dam/gyeol-dam.github.io/blob/main/docs/images/main.png?raw=true',  // 이미지 URL
                                     link: {
                                         mobileWebUrl: 'https://gyeol-dam.github.io/',
