@@ -702,6 +702,36 @@
             <div class="ending-text-section">
                 <div class="ending-button-row">
                     <button id="kakao-link-btn">카카오톡으로 공유하기</button>
+                    <script>
+                        // 카카오톡 JavaScript SDK 초기화
+                        Kakao.init('b9c81792d60ac07851ec125e31cb4e08');  // 여기에 발급받은 JavaScript 키를 넣어야 함
+                        console.log(Kakao.isInitialized());  // SDK 초기화 여부 확인용
+
+                        // 공유하기 기능
+                        document.getElementById('kakao-link-btn').addEventListener('click', function() {
+                            Kakao.Share.sendDefault({
+                                objectType: 'feed',
+                                content: {
+                                    title: '양기열과 조담희의 결혼식에 초대합니다.',
+                                    description: '2024년 12월 8일 오후 2시',
+                                    imageUrl: 'https://github.com/gyeol-dam/gyeol-dam.github.io/blob/main/docs/images/main.png?raw=true',  // 이미지 URL
+                                    link: {
+                                        mobileWebUrl: 'https://gyeol-dam.github.io/',
+                                        webUrl: 'https://gyeol-dam.github.io/'
+                                    }
+                                },
+                                buttons: [
+                                    {
+                                        title: '웹으로 보기',
+                                        link: {
+                                        mobileWebUrl: 'https://gyeol-dam.github.io/',
+                                        webUrl: 'https://gyeol-dam.github.io/'
+                                        }
+                                    }
+                                ]
+                            });
+                        });
+                    </script>
                     <button class="link-button" onclick="copyToClipboard_link('hidden-text')">청첩장 링크 복사하기</button>
                     <textarea id="hidden-text-link" class="hidden-text">https://gyeol-dam.github.io/</textarea>
                 </div>
