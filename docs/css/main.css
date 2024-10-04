@@ -10858,6 +10858,7 @@ a.text-dark:hover, a.text-dark:focus {
     color: white;
     font-size: 1rem;
     line-height: 1.4;
+    width: 80vw;
  }
  
  .ending-text-section {
