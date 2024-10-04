@@ -10618,6 +10618,26 @@ a.text-dark:hover, a.text-dark:focus {
     margin: 12px;
 }
 
+
+
+
+.muru {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+ }
+ 
+ .muru img {
+    width: 100px;
+    height: auto;
+ }
+
+
+
+
+
 .parents-image-section {
     position: relative;
     width: 100%;
