@@ -10050,12 +10050,11 @@ a.text-dark:hover, a.text-dark:focus {
     margin-bottom: 50px;
     font-size: 3rem;
 
-    font-family: "Noto Sans", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 300;
-    font-style: normal;
-    font-variation-settings:
-      "wdth" 100;
+    font-family: "Noto Sans", sans-serif !important;
+    font-optical-sizing: auto !important;
+    font-weight: 300 !important;
+    font-style: normal !important;
+    font-variation-settings: "wdth" 100 !important;
 }
 
 .ww-section {
