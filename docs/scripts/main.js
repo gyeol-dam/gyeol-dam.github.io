@@ -237,3 +237,19 @@ function updateCountdown() {
 
 // 1초마다 업데이트
 const countdownInterval = setInterval(updateCountdown, 1000);
+
+
+
+
+function copyToClipboard_link() {
+    // 복사할 텍스트 선택
+    var textArea = document.getElementById("hidden-text-link");
+ 
+    // 텍스트 영역을 선택하고 복사
+    textArea.select();
+    document.execCommand("copy");
+ 
+    // 성공 메시지 알림
+    alert("링크를 복사했습니다.");
+ }
+ 
