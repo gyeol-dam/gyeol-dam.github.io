@@ -10048,7 +10048,7 @@ a.text-dark:hover, a.text-dark:focus {
 /* Common Style */
 .ww-title {
     margin-bottom: 50px;
-    font-size: 3rem;
+    font-size: 2.5rem;
 
     font-family: "Noto Sans", sans-serif !important;
     font-optical-sizing: auto !important;
@@ -10620,7 +10620,7 @@ a.text-dark:hover, a.text-dark:focus {
  
  .couple-name {
     text-align: center;
-    margin-top: 15px;
+    margin-top: 10px;
  }
  
 .couple-margin {
@@ -10675,7 +10675,7 @@ a.text-dark:hover, a.text-dark:focus {
 
  .parents-couple-name {
     text-align: center;
-    margin-top: 15px;
+    margin-top: 10px;
     letter-spacing: -1px;
  }
 
