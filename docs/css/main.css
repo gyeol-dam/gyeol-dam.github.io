@@ -1071,6 +1071,17 @@ small,
     
 }
 
+@media not all and (min-resolution: 0.001dpcm) {
+    @supports (-webkit-appearance:none) {
+        .section-background-dday {
+            background-attachment: scroll; /* iOS에서 고정 배경 대신 스크롤로 설정 */
+         }
+         .parallax-dday {
+            background-image: url("../images/dday.png");
+         }
+    }
+}
+
 
 
 
