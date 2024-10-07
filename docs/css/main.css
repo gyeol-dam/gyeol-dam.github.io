@@ -1052,12 +1052,12 @@ small,
  }
 
  @supports (-webkit-overflow-scrolling: touch) {
-    .section-background-ending {
+    .section-background-dday {
       background-attachment: scroll; /* iOS에서 고정 배경 대신 스크롤로 설정 */
     }
-    .parallax-ending {
-        background-image: url("../images/ending_ios.png");
-      }
+    .parallax-dday {
+        background-image: url("../images/dday.png");
+     }
   }
 
 
