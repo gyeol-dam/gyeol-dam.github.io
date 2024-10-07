@@ -1053,12 +1053,25 @@ small,
 
  @supports (-webkit-overflow-scrolling: touch) {
     .section-background-dday {
-      background-attachment: scroll; /* iOS에서 고정 배경 대신 스크롤로 설정 */
-    }
-    .parallax-dday {
+        background-attachment: scroll; /* iOS에서 고정 배경 대신 스크롤로 설정 */
+     }
+     .parallax-dday {
         background-image: url("../images/dday.png");
      }
   }
+
+@supports (-webkit-touch-callout: none) {
+
+    .section-background-dday {
+        background-attachment: scroll; /* iOS에서 고정 배경 대신 스크롤로 설정 */
+     }
+     .parallax-dday {
+        background-image: url("../images/dday.png");
+     }
+    
+}
+
+
 
 
 
@@ -1118,15 +1131,6 @@ small,
       }
     
  }
-
- @supports (-webkit-overflow-scrolling: touch) {
-    .section-background-ending {
-      background-attachment: scroll; /* iOS에서 고정 배경 대신 스크롤로 설정 */
-    }
-    .parallax-ending {
-        background-image: url("../images/ending_ios.png");
-      }
-  }
 
 
 
