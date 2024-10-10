@@ -1175,7 +1175,10 @@ small,
     font-size: 1rem;
     line-height: 1.4;
     width: 80vw;
-    font-family: 'KoPubWorldBatang' !important;
+
+    font-family: "Gowun Batang", serif;
+    font-weight: 700;
+    font-style: normal;
  }
  
  .ending-text-section {
